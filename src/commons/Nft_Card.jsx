@@ -2,17 +2,13 @@
 import './Nft_Card.css';
 
 export default function Nft_Card(props){
-
-    const image = './../res/' + props.image;
-    const artistPhoto = './../res/' + props.artistPhoto;
-
     return (
         <div class='nft_card'>
-            <img src='https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder@2x.png' />
+            <img src={props.image} />
             <div className='NFT_info'>
                 <h1>{props.title}</h1>
                 <div className="artist_info">
-                    <img src='https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-2@2x.png' />
+                    <img src={props.artistPhoto} />
                     <h2>{props.artist}</h2>
                 </div>
                 <div className='others_infos'>

@@ -3,6 +3,82 @@ import './Marketplace.css';
 import Nft_Card from '../commons/Nft_Card';
 
 export default function Marketplace(){
+
+    const dummy_data = [
+        {
+            id: '1',
+            title: 'bubble 1',
+            image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png',
+            artist: 'Brandie Cooke',
+            artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-2@2x.png',
+            price: 50,
+            highestBid: 100,
+        },
+        {
+            id: '2',
+            title: 'indulge 2',
+            image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-72@2x.png',
+            artist: 'Harvey Velazquez',
+            artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-2@2x.png',
+            price: 50,
+            highestBid: 100,
+        },
+        {
+            id: '3',
+            title: 'credit 1',
+            image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png',
+            artist: 'Frederic Huber',
+            artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-2@2x.png',
+            price: 50,
+            highestBid: 100,
+        },
+        {
+            id: '4',
+            title: 'Teste 1',
+            image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-72@2x.png',
+            artist: 'Buddy Braun',
+            artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-33@2x.png',
+            price: 50,
+            highestBid: 100,
+        },
+        {
+            id: '5',
+            title: 'Teste 2',
+            image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png',
+            artist: 'Morton Abbott',
+            artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-2@2x.png',
+            price: 50,
+            highestBid: 100,
+        },
+        {
+            id: '6',
+            title: 'Teste 3',
+            image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-72@2x.png',
+            artist: 'Julianne Patrick',
+            artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-121@2x.png',
+            price: 50,
+            highestBid: 100,
+        },
+        {
+            id: '7',
+            title: 'Teste 4',
+            image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-72@2x.png',
+            artist: 'Carolyn Potts',
+            artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-33@2x.png',
+            price: 50,
+            highestBid: 100,
+        },
+        {
+            id: '8',
+            title: 'Teste 5',
+            image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png',
+            artist: 'Myles Jacobson',
+            artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-2@2x.png',
+            price: 50,
+            highestBid: 100,
+        }
+    ];
+
     return (
         <div id='marketplace_page'>
             <header />
@@ -26,14 +102,15 @@ export default function Marketplace(){
             </section>
             <section className='nft_gallery'>
                 <section className='nft_gallery_container'>
-                    <Nft_Card title='Magic Mushroom 1' image='placeholder.png' artist='Artist 1' artistPhoto='placeholder.png' price='10' highestBid='5' />
-                    <Nft_Card title='Magic Mushroom 2' image='placeholder.png' artist='Artist 2' artistPhoto='placeholder.png' price='10' highestBid='5' />
-                    <Nft_Card title='Magic Mushroom 3' image='placeholder.png' artist='Artist 3' artistPhoto='placeholder.png' price='10' highestBid='5' />
-                    <Nft_Card title='Magic Mushroom 4' image='placeholder.png' artist='Artist 4' artistPhoto='placeholder.png' price='10' highestBid='5' />
-                    <Nft_Card title='Magic Mushroom 5' image='placeholder.png' artist='Artist 5' artistPhoto='placeholder.png' price='10' highestBid='5' />
-                    <Nft_Card title='Magic Mushroom 6' image='placeholder.png' artist='Artist 6' artistPhoto='placeholder.png' price='10' highestBid='5' />
-                    <Nft_Card title='Magic Mushroom 7' image='placeholder.png' artist='Artist 7' artistPhoto='placeholder.png' price='10' highestBid='5' />
-                    <Nft_Card title='Magic Mushroom 8' image='placeholder.png' artist='Artist 8' artistPhoto='placeholder.png' price='10' highestBid='5' />
+                    {dummy_data.map(nftCard => (
+                        <Nft_Card 
+                            title={nftCard.title} 
+                            image={nftCard.image} 
+                            artist={nftCard.artist} 
+                            artistPhoto={nftCard.artistPhoto} 
+                            price={nftCard.price} 
+                            highestBid={nftCard.highestBid} />
+                    ))}
                 </section>
             </section>
             <footer />
