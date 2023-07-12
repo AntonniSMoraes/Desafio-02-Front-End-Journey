@@ -1,6 +1,7 @@
 
 import './Marketplace.css';
 import Nft_Card from '../commons/Nft_Card';
+import Footer from '../commons/Footer';
 
 export default function Marketplace(){
 
@@ -113,7 +114,9 @@ export default function Marketplace(){
                     ))}
                 </section>
             </section>
-            <footer />
+            <section className='footer_section'>
+                <Footer />
+            </section>
         </div>
     );
 }
