@@ -95,6 +95,7 @@
 .nft_gallery{
     background: var(--bg-secondary);
     padding: 70px 0;
+    border-bottom: 2px solid #2B2B2B;
 }
 
 .nft_gallery_container{
@@ -104,14 +105,4 @@
     max-width: 1050px;
     justify-content: center;
     gap: 30px;
-}
-
-.footer_section{
-    background: var(--bg-secondary);
-    margin-top: 3px;
-}
-
-Footer {
-    max-width: 1050px;
-    margin: 0 auto;
 }
