@@ -8,6 +8,10 @@ export default function Header() {
     setIsActive(!isActive);
   };
 
+  const handleMouseLeave = () => {
+    if(isActive==true)setIsActive(false);
+  }
+
   return (
     <header>
       <a id="logo" href="/">
@@ -20,7 +24,7 @@ export default function Header() {
           <img src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/burger-menu-@2x.svg" />
         </button>
         {isActive && (
-          <div className={`overlay ${isActive ? "active" : ""}`}>
+          <div className={`overlay ${isActive ? "active" : ""}`} onMouseLeave = {handleMouseLeave}>
             <ul className="burguer-itens">
               <li>
                 <a className="a-burguer" href="/Marketplace">Marketplace</a>
