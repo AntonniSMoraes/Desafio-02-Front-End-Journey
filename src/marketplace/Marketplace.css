@@ -64,27 +64,24 @@
 
 .search_nft_selector{
     background: var(--bg);
-    padding:19px;
     border-top: 1px solid var(--bg-secondary);
     display: flex;
     justify-content: center;
-    gap:20%;
 }
 
-.titles{
-    display:flex;
-    align-items: center;
-    gap:20px;
-}
-
-.titles > h3{
+.titles {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 20px 10%;
+    background: none;
     color: white;
     font: 600 22px/140% 'Work Sans';
     text-transform: capitalize;
     text-align: center;
 }
 
-.titles > p{
+button > span{
     color: white;
     font: 400 16px/140% 'Space Mono';
     padding:5px 15px;
@@ -105,4 +102,33 @@
     max-width: 1050px;
     justify-content: center;
     gap: 30px;
+}
+
+@media (max-width: 600px){
+    #browser_section{
+        width:83%;
+        margin-bottom: 40px;
+    }
+
+    #marketplace_page{
+        padding-top: 0;
+    }
+
+    #browser_section > h1 {
+        color: var(--white, #FFF);
+        font-size: 28px;
+    }
+
+    #browser_section > p{
+        font-size: 16px;
+    }
+
+    #browser_section input{
+        color: var(--caption-label-text, #858584);
+        font-size: 16px;
+    }
+
+    .titles > p{
+        display:none;
+    }
 }
