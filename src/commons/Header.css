@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap");
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #2B2B2B;
+}
+
+img {
+  width: 24px;
+  height: 24px;
+}
+
+button {
+  border: none;
+}
+
+ul {
+  display: none;
+  list-style: none;
+}
+
+li {
+  padding: 5px;
+}
+
+a {
+  font: 600 16px/140% "Work Sans";
+  color: white;
+  text-decoration: none;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 10px;
+}
+
+#sign-up-button {
+  display: none;
+}
+
+/* menu burguer */
+#burguer {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.burguer-itens {
+  display: flex;
+  width: 10rem;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: -13.5rem;
+}
+
+.a-burguer {
+  font-size: 10px;
+}
+
+.overlay {
+  position: absolute;
+  width: 0.4rem;
+  height: 5.8rem;
+  /* margin-left: -8.4rem; */
+  border-radius: 0px 0px 20px 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 0;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.overlay.active {
+  animation-name: fade-in;
+}
+
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.rotate {
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate.active {
+  transform: rotate(-90deg);
+}
+/* menu burguer */
+
+@media (max-width: 274px)
+{
+  #burguer {
+    display: none;
+  }
+}
+
+@media (min-width: 386px) {
+  header {
+    padding: 15px 50px;
+  }
+}
+
+@media (min-width: 834px) {
+  header {
+    padding: 20px 50px;
+  }
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+
+  #sign-up-button {
+    display: inline-flex;
+    background-color: #a259ff;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    padding: 0rem 2rem;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  li {
+    padding: 20px;
+  }
+
+  h5 {
+    background-color: transparent;
+    font: 600 14px/140% "Work Sans";
+  }
+
+  a {
+    font: 600 13px/140% "Work Sans";
+    color: white;
+    text-decoration: none;
+  }
+
+  #logo {
+    font-size: 15px;
+  }
+
+  #menu-right {
+    display: flex;
+    align-items: center;
+  }
+
+  #sign-up {
+    background-color: transparent;
+    width: 20px;
+    padding-right: 0.75rem;
+  }
+
+  #burguer {
+    display: none;
+  }  
+}
+
+@media (min-width: 906px) {
+  #logo {
+    font-size: 19px;
+  }
+
+  a {
+    font: 600 16px/140% "Work Sans";
+    color: white;
+    text-decoration: none;
+  }
+
+  #sign-up-button {
+    height: 60px;
+    padding: 0rem 2.5rem;
+  }
+}

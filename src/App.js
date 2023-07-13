@@ -1,10 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 import Marketplace from './marketplace/Marketplace';
+import Header from './commons/Header';
 
 function App() {
   return (
+    <div>
+    <Header />
     <Marketplace />
+    </div>
   );
 }
 
