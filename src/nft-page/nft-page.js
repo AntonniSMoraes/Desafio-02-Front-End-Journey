@@ -1,38 +1,57 @@
 import React from "react";
-import styles from "./nft-page.module.css";
 import TimerComponent from "../components/timerComponent/timerComponent";
+import firstImage from "../images/image-place-holder.png";
+import avatarImage from "../images/avatar-placeholder.png";
+import globeImage from "../images/globe.png";
+import "./nft-page.css";
 
 function NftPage() {
+    const handleDivClick = () => {
+        window.location.href = "https://nft-market-place.animaapp.io/artist-page-desktop";
+    }
+
+    const handleDivCLick2 = () => {
+        window.location.href = "https://www.animaapp.com/?utm_source=figma-samples&utm_campaign=figma-nftmarket&utm_medium=figma-samples";
+    }
+
   return (
-    <div className={styles.wholepage}>
-      <div className={styles.image}>
-        <img src="../../public/images/image-place-holder.png" alt="NFT" />
+    <div className="wholepage">
+      <div className="divImage">
+        <img src={firstImage} alt="NFT" />
       </div>
-      
-      <div className={styles.div2}>
-        <div>
+      <div className="divTexts">
+        <div className="divTitle">
           <h1>The Orbitians</h1>
-          <p><span>Minted On Sep 30, 2022</span></p>
+          <p>
+            <span>Minted On Sep 30, 2022</span>
+          </p>
         </div>
 
-        <div>
-          <h3>Created By</h3>
+        <div className="divCreated" >
+          <div className="createdBy">
+            <h3>Created By</h3>
+          </div>
+          <div className="profile" onClick={handleDivClick}>
+            <img className="avatarImage" src={avatarImage} alt="Avatar" />
+            <h3>Orbitian</h3>
+          </div>
         </div>
 
-        <div>
-            <img src="../../public/images/avatar-placeholder.png" alt="creator-profile" />
-          <h3>Orbitian</h3>
-        </div>
-
-        <div>
+        <div className="divDescription">
           <h3>Description</h3>
           <p>
             The Orbitians is a collection of 10,000 unique NFTs on the Ethereum
-            blockchain, There are all sorts of beings in the NFT Universe. The
-            most advanced and friendly of the bunch are Orbitians. They live in
+            blockchain,
+            <br />
+            <br />
+            There are all sorts of beings in the NFT Universe. The
+            most advanced and friendly of the bunch are Orbitians.
+            <br />
+            <br />
+            They live in
             a metal space machines, high up in the sky and only have one foot on
-            Earth. These Orbitians are a peaceful race, but they have been at
-            war with a group of invaders for many generations. The invaders are
+            Earth.<br /> These Orbitians are a peaceful race, but they have been at
+            war with a group of invaders for many generations. <br />The invaders are
             called Upside-Downs, because of their inverted bodies that live on
             the ground, yet do not know any other way to be. Upside-Downs
             believe that they will be able to win this war if they could only
@@ -40,12 +59,28 @@ function NftPage() {
             beings their target.
           </p>
         </div>
-      </div>
+        <div className="divDetails">
+            <div className="divTitleDetails">
+                <h3>Details</h3>
+            </div>
+            <div className="divDetailsText1" onClick={handleDivCLick2}>
+                <img className="globeImage" src={globeImage} alt="Globe" />
+                <h3>View on Etherscan</h3>
+            </div>
+            <div className="divDetailsText2" onClick ={handleDivCLick2}>
+                <img className="globeImage" src={globeImage} alt="Globe" />
+                <h3>View Original</h3>
+            </div>
+        </div>
 
-      <div className={styles.divTimer}>
-        <TimerComponent />
       </div>
-
+      <div className="divTimer">
+        <TimerComponent
+          auctionEndsIn="59 : 59 : 59"
+          firstText="Auction Ends In:"
+          textButton="Place a Bid"
+        />
+      </div>
     </div>
   );
 }
