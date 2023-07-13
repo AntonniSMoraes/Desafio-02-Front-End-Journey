@@ -1,14 +1,14 @@
 
-import './Nft_Card.css';
+import './NftCard.css';
 
 export default function Nft_Card(props){
     return (
         <div class='nft_card'>
-            <img src={props.image} />
+            <img src={props.image}  alt=''/>
             <div className='NFT_info'>
                 <h1>{props.title}</h1>
                 <div className="artist_info">
-                    <img src={props.artistPhoto} />
+                    <img src={props.artistPhoto}  alt=''/>
                     <h2>{props.artist}</h2>
                 </div>
                 <div className='others_infos'>

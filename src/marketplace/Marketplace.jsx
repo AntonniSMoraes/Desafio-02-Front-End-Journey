@@ -1,6 +1,6 @@
 
 import './Marketplace.css';
-import Nft_Card from '../commons/Nft_Card';
+import NftCard from '../commons/NftCard';
 import Footer from '../commons/Footer';
 
 export default function Marketplace(){
@@ -104,7 +104,7 @@ export default function Marketplace(){
             <section className='nft_gallery'>
                 <section className='nft_gallery_container'>
                     {dummy_data.map(nftCard => (
-                        <Nft_Card 
+                        <NftCard 
                             title={nftCard.title} 
                             image={nftCard.image} 
                             artist={nftCard.artist} 
