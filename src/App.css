@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+Footer {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.footer_section{
+  background: #3B3B3B;
+  width: 100%;
+}

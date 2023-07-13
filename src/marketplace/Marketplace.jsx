@@ -114,9 +114,6 @@ export default function Marketplace(){
                     ))}
                 </section>
             </section>
-            <section className='footer_section'>
-                <Footer />
-            </section>
         </div>
     );
 }
