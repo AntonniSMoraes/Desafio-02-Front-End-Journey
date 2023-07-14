@@ -2,47 +2,49 @@
 import './Marketplace.css';
 import NftCard from '../commons/NftCard';
 import React, { useState } from "react";
+import {collectionsDummyData} from '../commons/collectionsDummyData';
+import Card from '../commons/ColectionCard'
 
 export default function Marketplace(props){
 
-    const collectionsDummyData = [
-        {
-            id: '1',
-            title: 'bubble 1',
-            image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png',
-            artist: 'Brandie Cooke',
-            artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-2@2x.png',
-            price: 50,
-            highestBid: 100,
-        },
-        {
-            id: '2',
-            title: 'indulge 2',
-            image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-72@2x.png',
-            artist: 'Harvey Velazquez',
-            artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-2@2x.png',
-            price: 50,
-            highestBid: 100,
-        },
-        {
-            id: '3',
-            title: 'credit 1',
-            image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png',
-            artist: 'Frederic Huber',
-            artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-2@2x.png',
-            price: 50,
-            highestBid: 100,
-        },
-        {
-            id: '4',
-            title: 'Teste 1',
-            image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-72@2x.png',
-            artist: 'Buddy Braun',
-            artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-33@2x.png',
-            price: 50,
-            highestBid: 100,
-        },
-    ];
+    // const collectionsDummyData = [
+    //     {
+    //         id: '1',
+    //         title: 'bubble 1',
+    //         image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png',
+    //         artist: 'Brandie Cooke',
+    //         artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-2@2x.png',
+    //         price: 50,
+    //         highestBid: 100,
+    //     },
+    //     {
+    //         id: '2',
+    //         title: 'indulge 2',
+    //         image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-72@2x.png',
+    //         artist: 'Harvey Velazquez',
+    //         artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-2@2x.png',
+    //         price: 50,
+    //         highestBid: 100,
+    //     },
+    //     {
+    //         id: '3',
+    //         title: 'credit 1',
+    //         image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png',
+    //         artist: 'Frederic Huber',
+    //         artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-2@2x.png',
+    //         price: 50,
+    //         highestBid: 100,
+    //     },
+    //     {
+    //         id: '4',
+    //         title: 'Teste 1',
+    //         image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-72@2x.png',
+    //         artist: 'Buddy Braun',
+    //         artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-33@2x.png',
+    //         price: 50,
+    //         highestBid: 100,
+    //     },
+    // ];
 
     // 'barFocus' define qual barra está selecionada, se 'NFT' ou 'Collections'
     const [barFocus, setBarFocus] = useState(0);
@@ -76,14 +78,16 @@ export default function Marketplace(props){
         }
     }
     else{
-        nftGalleryContent = collectionsDummyData.map(nftCard => (
-            <NftCard 
-                title={'@@COLLECTION'} 
-                image={'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png'} 
-                artist={'collection'} 
-                artistPhoto={nftCard.artistPhoto} 
-                price={nftCard.price} 
-                highestBid={nftCard.highestBid} />
+        nftGalleryContent = collectionsDummyData.map(collection => (
+            <Card
+                nomeArtista={collection.nomeArtista}
+                imagemPrincipal={collection.imagemPrincipal}
+                imagemPqna1={collection.imagemPqna1}
+                imagemPqna2={collection.imagemPqna2}
+                quantidadeImagens={collection.quantidadeImagens}
+                nomePasta={collection.nomePasta}
+                imagemAvatar={collection.imagemAvatar}
+          />
         ));
     }
 
