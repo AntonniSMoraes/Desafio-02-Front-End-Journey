@@ -72,7 +72,17 @@ function NftPage() {
                 <h3>View Original</h3>
             </div>
         </div>
-
+        <div className="divTags">
+            <div className="divTitleTags">
+                <h3>Tags</h3>
+            </div>
+            <div className="divTagsText">
+                <h3>Animation</h3>
+                <h3>Illustration</h3>
+                <h3>Moon</h3>
+                <h3>Moon</h3>
+            </div>
+        </div>
       </div>
       <div className="divTimer">
         <TimerComponent

@@ -4,25 +4,25 @@ import "./timerComponent.css";
 function TimerComponent(props) {
   const { auctionEndsIn, firstText, textButton } = props;
   const [timeRemaining, setTimeRemaining] = useState(auctionEndsIn);
+  const [hoursRemaining, setHoursRemaining] = useState(0);
+  const [minutesRemaining, setMinutesRemaining] = useState(0);
+  const [secondsRemaining, setSecondsRemaining] = useState(0);
 
   useEffect(() => {
-    // Converte o valor de auctionEndsIn para segundos
     const [hours, minutes, seconds] = auctionEndsIn.split(" : ");
     let totalSeconds = parseInt(hours) * 3600 + parseInt(minutes) * 60 + parseInt(seconds);
 
     const interval = setInterval(() => {
-      // Calcula o tempo restante em horas, minutos e segundos
       const hoursRemaining = Math.floor(totalSeconds / 3600);
       const minutesRemaining = Math.floor((totalSeconds % 3600) / 60);
       const secondsRemaining = totalSeconds % 60;
 
-      // Atualiza o estado com o tempo restante formatado
-      setTimeRemaining(`${hoursRemaining} : ${minutesRemaining} : ${secondsRemaining}`);
+      setHoursRemaining(hoursRemaining);
+      setMinutesRemaining(minutesRemaining);
+      setSecondsRemaining(secondsRemaining);
 
-      // Decrementa o tempo restante em um segundo
       totalSeconds--;
 
-      // Verifica se o tempo restante chegou a zero
       if (totalSeconds < 0) {
         clearInterval(interval);
         setTimeRemaining("Auction Ended");
@@ -38,9 +38,22 @@ function TimerComponent(props) {
     <div className="fundo">
       <div className="timer">
         <p>{firstText}</p>
-        <h1>{timeRemaining}</h1>
+        <div className="counters">
+          <div>
+            <h1>{hoursRemaining} :</h1>
+            <span>Hours</span>
+          </div>
+          <div>
+            <h1>{minutesRemaining} :</h1>
+            <span>Minutes</span>
+          </div>
+          <div>
+            <h1>{secondsRemaining}</h1>
+            <span>Seconds</span>
+          </div>
+        </div>
         <button>{textButton}</button>
-      </div>   
+      </div>
     </div>
   );
 }

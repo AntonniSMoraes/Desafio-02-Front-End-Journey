@@ -1,5 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap");
-
 
 .fundo {
   background: #3b3b3b;
@@ -11,8 +11,7 @@
   gap: 30px;
   align-self: stretch;
   border-radius: 20px;
-  width: 500px;
-  
+  width: 350px;
 }
 
 button {
@@ -24,4 +23,61 @@ button {
   padding: 30px;
   width: 250px;
   font-size: 20px;
+}
+
+.timer > p {
+  text-align: left;
+  font-size: 12px;
+  font-family: Space Mono;
+}
+
+.timer > h1 {
+  font-size: 38px;
+  font-family: Space Mono;
+}
+
+.timer > button {
+  font-size: 16px;
+  font-family: Work Sans;
+}
+
+.timer > span {
+  font-size: 12px;
+  font-family: Space Mono;
+}
+
+.timer {
+  text-align: center;
+}
+
+.timer button {
+  transition: transform 0.4s ease;
+}
+
+.timer button:hover {
+  transform: scale(0.95);
+}
+
+.counters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counters > div {
+  margin-right: 10px;
+}
+
+.counters h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.counters span {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 10px;
 }

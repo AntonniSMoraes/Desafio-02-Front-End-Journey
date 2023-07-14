@@ -102,3 +102,28 @@
 .globeImage {
   margin-right: 10px;
 }
+
+.divTitleTags {
+  color: #858584;
+  font-size: 22px;
+}
+
+.divTagsText {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.divTagsText h3 {
+  background-color: #3b3b3b;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: transform 0.6s ease;
+}
+
+.divTagsText h3:hover {
+  transform: scale(0.9);
+}
