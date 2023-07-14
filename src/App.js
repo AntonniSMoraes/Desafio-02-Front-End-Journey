@@ -12,10 +12,11 @@ export default function App() {
   const ARTISTS_URI = 'https://nftdatabase-703d2-default-rtdb.firebaseio.com/data/artists.json';
   const NFTS_URI = 'https://nftdatabase-703d2-default-rtdb.firebaseio.com/data/nfts.json';
 
-  // Requisição HTTP com hook useEffect
+  // Estados que conterão os dados recebidos
   const [artists, setArtists] = useState([]);
   const [nfts, setNfts] = useState([]);
 
+  // Requisição HTTP com hook useEffect
    useEffect(() => {
       fetch(ARTISTS_URI)
          .then((res) => res.json())
@@ -38,19 +39,14 @@ export default function App() {
        });
     }, []);
 
-   // atribuição do resultado da requisição às devidas variáveis
-  //   let artistsData = data.artists;
-  //  let NFTsData = data.ntfs;
-
     return (
       <div>
         <Header />
         <Main />
         <Marketplace nfts={nfts} artists={artists} />
-        {/* 
         <section className='footer_section'>
           <Footer /> 
-        </section> */}
+        </section>
       </div>
   );
 }
