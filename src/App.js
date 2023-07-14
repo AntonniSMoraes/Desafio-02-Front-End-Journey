@@ -39,6 +39,9 @@ export default function App() {
        });
     }, []);
 
+
+    /* Usar "nfts={nfts} artists={artists}" para passar os dados
+    para o componente */
     return (
       <div>
         <Header />
