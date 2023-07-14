@@ -3,9 +3,9 @@ import './Marketplace.css';
 import NftCard from '../commons/NftCard';
 import React, { useState } from "react";
 
-export default function Marketplace(){
+export default function Marketplace(props){
 
-    const dummy_data = [
+    const collectionsDummyData = [
         {
             id: '1',
             title: 'bubble 1',
@@ -42,46 +42,10 @@ export default function Marketplace(){
             price: 50,
             highestBid: 100,
         },
-        {
-            id: '5',
-            title: 'Teste 2',
-            image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png',
-            artist: 'Morton Abbott',
-            artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-2@2x.png',
-            price: 50,
-            highestBid: 100,
-        },
-        {
-            id: '6',
-            title: 'Teste 3',
-            image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-72@2x.png',
-            artist: 'Julianne Patrick',
-            artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-121@2x.png',
-            price: 50,
-            highestBid: 100,
-        },
-        {
-            id: '7',
-            title: 'Teste 4',
-            image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-72@2x.png',
-            artist: 'Carolyn Potts',
-            artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-33@2x.png',
-            price: 50,
-            highestBid: 100,
-        },
-        {
-            id: '8',
-            title: 'Teste 5',
-            image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png',
-            artist: 'Myles Jacobson',
-            artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-2@2x.png',
-            price: 50,
-            highestBid: 100,
-        }
     ];
 
     // 'barFocus' define qual barra está selecionada, se 'NFT' ou 'Collections'
-    const [barFocus, setBarFocus] = useState(1);
+    const [barFocus, setBarFocus] = useState(0);
 
     // Altera a barra mostrada
     function handleClick(event){
@@ -96,20 +60,23 @@ export default function Marketplace(){
 
     // Determina o que será mostrado na galeria, se as NFTs ou as Collections
     let nftGalleryContent = null;
-    const derived = dummy_data.slice(1, 4);
     if(barFocus === 0){
-        nftGalleryContent = dummy_data.map(nftCard => (
-            <NftCard 
+        nftGalleryContent = new Array();
+        for(let i = 0; i < props.nfts.length; i++) {
+            let nftCard = props.nfts[i];
+            let artistPhotoObj = props.artists.find(element => element.name === nftCard.artist);
+            let card = <NftCard 
                 title={nftCard.title} 
                 image={nftCard.image} 
-                artist={nftCard.artist} 
-                artistPhoto={nftCard.artistPhoto} 
+                artist={nftCard.artist}
+                artistPhoto={artistPhotoObj.photo} 
                 price={nftCard.price} 
-                highestBid={nftCard.highestBid} />
-        ));
+                highestBid={nftCard.highestBid} />;
+            nftGalleryContent.push(card);
+        }
     }
     else{
-        nftGalleryContent = derived.map(nftCard => (
+        nftGalleryContent = collectionsDummyData.map(nftCard => (
             <NftCard 
                 title={'@@COLLECTION'} 
                 image={'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png'} 
@@ -129,6 +96,7 @@ export default function Marketplace(){
             borderBottom: '2px solid gray'
         }
     };
+
     let nftBarStyle, collectionBarStyle;
     if(barFocus === 0){
         nftBarStyle = borderStyles.selectedBorder;
@@ -151,10 +119,10 @@ export default function Marketplace(){
             </section>
             <section className='search_nft_selector'>
                 <button onClick={handleClick} id='Nfts_bar' className='titles' style={nftBarStyle}>
-                    Nfts<span>{dummy_data.length}</span>
+                    Nfts<span>{props.nfts.length}</span>
                 </button>
                 <button onClick={handleClick} id='collections_bar' className='titles' style={collectionBarStyle}>
-                    Collections<span>{derived.length}</span>
+                    Collections<span>{collectionsDummyData.length}</span>
                 </button>
             </section>
             <section className='nft_gallery'>
