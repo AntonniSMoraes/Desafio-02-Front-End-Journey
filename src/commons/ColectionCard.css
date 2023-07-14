@@ -1,0 +1,91 @@
+.card-conf {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 315px;
+  height: 505px;
+}
+
+.img-conf {
+  height: 315px;
+}
+
+.men-img-order {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.men-img-conf {
+  height: 95px;
+}
+
+.more {
+  display: flex;
+  height: 95px;
+  width: 95px;
+  font: 700 22px/160% "Space Mono";
+  text-decoration: none;
+  color: white;
+  background-color: #a259ff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.folder-name {
+  font: 600 22px/140% "Work Sans";
+  color: white;
+}
+
+.artist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 24px;
+}
+
+.p-style {
+  font: 400 16px/140% "Work Sans";
+  color: white;
+}
+
+.card-conf:nth-child(2) {
+  display: none;
+}
+
+.card-conf:nth-child(3) {
+  display: none;
+}
+
+@media (min-width: 385) {
+  .card-conf {
+    width: 330px;
+    height: 525px;
+  }
+
+  .img-conf {
+    height: 315px;
+  }
+
+  .men-img-conf {
+    height: 100px;
+  }
+}
+
+@media (min-width: 822px) {
+  .card-conf:nth-child(2) {
+    display: flex;
+  }
+}
+
+@media (min-width: 1000px) {
+  .card-conf:nth-child(3) {
+    display: flex;
+  }
+}
