@@ -7,7 +7,7 @@ header {
   background-color: #2B2B2B;
 }
 
-img {
+.logo {
   width: 24px;
   height: 24px;
 }
@@ -16,16 +16,18 @@ button {
   border: none;
 }
 
-ul {
+.ul-conf {
   display: none;
   list-style: none;
+  background: transparent;
 }
 
-li {
+.li-conf {
   padding: 5px;
+  background: transparent;
 }
 
-a {
+.a-conf {
   font: 600 16px/140% "Work Sans";
   color: white;
   text-decoration: none;
@@ -60,6 +62,7 @@ a {
 .a-burguer {
   font-size: 10px;
   background: transparent;
+  color: #2B2B2B;
 }
 
 .overlay {
@@ -68,7 +71,7 @@ a {
   height: 8rem;
   margin-left: -8.4rem;
   border-radius: 20px 0px 20px 20px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.9);
   opacity: 0;
   animation-duration: 0.3s;
   animation-timing-function: ease-in-out;
@@ -94,8 +97,7 @@ a {
 }
 /* menu burguer */
 
-@media (max-width: 274px)
-{
+@media (max-width: 274px) {
   #burguer {
     display: none;
   }
@@ -112,7 +114,7 @@ a {
     padding: 20px 50px;
   }
 
-  img {
+  .logo {
     width: 32px;
     height: 32px;
   }
@@ -129,21 +131,21 @@ a {
     align-items: center;
   }
 
-  ul {
+  .ul-conf {
     display: flex;
     flex-direction: row;
   }
 
-  li {
+  .li-conf {
     padding: 20px;
   }
 
-  h5 {
+  .h5-conf {
     background-color: transparent;
     font: 600 14px/140% "Work Sans";
   }
 
-  a {
+  .a-conf {
     font: 600 13px/140% "Work Sans";
     color: white;
     text-decoration: none;
@@ -174,7 +176,7 @@ a {
     font-size: 19px;
   }
 
-  a {
+  .a-conf {
     font: 600 16px/140% "Work Sans";
     color: white;
     text-decoration: none;
