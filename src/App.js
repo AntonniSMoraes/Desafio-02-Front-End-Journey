@@ -10,11 +10,12 @@ export default function App() {
       <div>
         <Header />
         <Main />
-        <Marketplace />
-        {/* 
-        <section className='footer_section'>
+        
+        {/* <Marketplace /> */}
+        
+        {/* <section className='footer_section'>
           <Footer /> 
-        </section>*/}
+        </section> */}
       </div>
   );
 }

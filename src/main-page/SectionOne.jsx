@@ -13,7 +13,7 @@ export default function SectionOne() {
           </p>
         </div>
         {/* botão para artist page */}
-        <button><img src={heroAnimation} className="first-pg-gif" /></button>
+        <button className="gif-button"><img src={heroAnimation} className="first-pg-gif" /></button>
       </div>
       <div className="organizer-two">
         {/* botão para sign up */}
