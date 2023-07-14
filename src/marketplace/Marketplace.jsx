@@ -66,7 +66,7 @@ export default function Marketplace(props){
             let nftCard = props.nfts[i];
             let artistPhotoObj = props.artists.find(element => element.name === nftCard.artist);
             let card = <NftCard 
-                title={nftCard.title} 
+                title={nftCard.name} 
                 image={nftCard.image} 
                 artist={nftCard.artist}
                 artistPhoto={artistPhotoObj.photo} 
