@@ -50,7 +50,7 @@ export default function App() {
         {/* 
         <section className='footer_section'>
           <Footer /> 
-        </section>*/}
+        </section> */}
       </div>
   );
 }
