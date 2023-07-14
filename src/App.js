@@ -1,18 +1,20 @@
 
-import logo from './logo.svg';
 import './App.css';
+import Header from './commons/Header';
+import Main from './main-page/Main';
 import Marketplace from './marketplace/Marketplace';
 import Footer from './commons/Footer';
-import Header from './commons/Header';
 
 export default function App() {
     return (
       <div>
         <Header />
+        <Main />
         <Marketplace />
+        {/* 
         <section className='footer_section'>
-          <Footer />
-        </section>
+          <Footer /> 
+        </section>*/}
       </div>
   );
 }

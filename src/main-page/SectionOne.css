@@ -18,7 +18,7 @@
   width: 315px;
 }
 
-#title {
+.title {
   font: 600 28px/140% "Work Sans";
 }
 
@@ -76,13 +76,13 @@
 }
 
 /* tablet */
-@media (min-width: 386px) {
+@media (min-width: 670px) {
   .first-pg {
     padding: 60px 0px;
     gap: 0;
   }
 
-  #title {
+  .title {
     font: 600 38px/140% "Work Sans";
   }
 
@@ -107,16 +107,17 @@
 }
 
 /* pc */
-@media (min-width: 834px) {
+@media (min-width: 1024px) {
   .first-pg {
     padding: 80px 495px;
   }
 
   .first-pg-txt {
-    width: 510px;
+    width: 480px;
+    padding-left: 5rem;
   }
 
-  #title {
+  .title {
     font: 600 67px/110% "Work Sans";
   }
 
@@ -128,43 +129,7 @@
     width: 510px;
   }
 
-  /* 
-
-
   .organizer-two {
-    margin-left: 0rem;
+    margin: -10rem 0 0 -52rem;
   }
-
-  .get-started {
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    font: 600 16px/140% "Work Sans";
-    color: white;
-    width: 315px;
-    height: 60px;
-    background-color: #a259ff;
-    border-radius: 20px;
-  }
-
-  #rocket {
-    background: transparent;
-    padding-right: 10px;
-  }
-
-  .info-pg {
-    display: flex;
-    gap: 50px;
-  }
-
-  #aditional-value {
-    font: 700 22px/160% "Space Mono";
-    color: white;
-  }
-
-  #aditional-info {
-    font: 400 16px/140% "Work Sans";
-    color: white;
-  } */
 }

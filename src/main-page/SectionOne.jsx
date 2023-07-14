@@ -6,16 +6,14 @@ export default function SectionOne() {
     <section className="first-pg">
       <div className="organizer">
         <div className="first-pg-txt">
-          <h1 id="title">Discover Digital Art & Collect Nfts</h1>
+          <h1 className="title">Discover Digital Art & Collect Nfts</h1>
           <p id="text">
             NFT marketplace UI created with Anima for Figma. Collect, buy and
             sell art from more than 20k NFT artists.
           </p>
         </div>
         {/* botão para artist page */}
-        <a href="/">
-          <img src={heroAnimation} className="first-pg-gif" />
-        </a>
+        <button><img src={heroAnimation} className="first-pg-gif" /></button>
       </div>
       <div className="organizer-two">
         {/* botão para sign up */}
