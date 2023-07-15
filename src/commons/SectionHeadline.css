@@ -22,9 +22,17 @@
   }
 }
 
+@media (min-width: 500px) {
+  .txtbox {
+    width: 680px;
+    padding-left: 23rem;
+  }
+}
+
 @media (min-width: 830px) {
   .txtbox {
     width: 680px;
+    padding-left: 0;
   }
 }
 
