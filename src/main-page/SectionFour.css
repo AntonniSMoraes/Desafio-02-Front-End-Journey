@@ -1,0 +1,76 @@
+.pg-four {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-color: #2b2b2b;
+}
+
+.pg-four-title {
+  width: 315px;
+  align-self: flex-start;
+  padding-left: 2.4rem;
+  font: 600 28px/140% "Work Sans";
+  color: white;
+}
+
+.pg-four-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (min-width: 385px) {
+  .pg-four-title {
+    align-self: center;
+    width: 315px;
+    padding-left: 4rem;
+  }
+
+  .pg-four-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 500px) {
+  .pg-four-title {
+    width: 550px;
+  }
+  
+  .pg-four-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 800px) {
+  .pg-four-title {
+    width: 720px;
+  }
+
+  .pg-four-cards {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 950px) {
+  .pg-four-title {
+    width: 720px;
+  }
+
+  .pg-four-cards {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .pg-four-title {
+    width: 1090px;
+  }
+}
