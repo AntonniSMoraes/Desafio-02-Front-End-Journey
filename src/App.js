@@ -45,11 +45,11 @@ export default function App() {
     return (
       <div>
         <Header />
-        <Main />
+        <Main artists={artists} nfts={nfts} />
         {/* <Marketplace nfts={nfts} artists={artists} /> */}
-        <section className='footer_section'>
+        {/* <section className='footer_section'>
           <Footer /> 
-        </section>
+        </section> */}
       </div>
   );
 }
