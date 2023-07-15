@@ -1,5 +1,6 @@
 import "./SectionTwo.css";
 import Card from "../commons/ColectionCard";
+import SectionHeadline from "../commons/SectionHeadline";
 
 const objeto = {
   one: {
@@ -46,12 +47,7 @@ const objeto = {
 export default function SectionTwo() {
   return (
     <section className="pg-two">
-      <div className="pg-two-txtbox">
-        <h4 className="pg-two-title">Trending Collection</h4>
-        <p className="pg-two-txt">
-          Checkout our weekly updated trending collection.
-        </p>
-      </div>
+      <SectionHeadline title={"Trending Collection"} txt={"Checkout our weekly updated trending collection."}/>
       <div className="cards">
         <Card
           nomeArtista={objeto.one.nomeArtista}

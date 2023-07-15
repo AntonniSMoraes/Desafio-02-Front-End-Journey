@@ -18,24 +18,21 @@ export default function SectionOne() {
       <div className="organizer-two">
         {/* botão para sign up */}
         <button className="get-started">
-          <img
-            id="rocket"
-            src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/rocketlaunch@2x.svg"
-          />
-          Get Started!
+          <img id="rocket" src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/rocketlaunch@2x.svg"/>
+          <h5 className="get-started-txt">Get Started!</h5>
         </button>
         <div className="info-pg">
           <div>
-            <p id="aditional-value">240k+</p>
-            <p id="aditional-info">Total Sale</p>
+            <h5 className="aditional-value">240k+</h5>
+            <p className="aditional-info">Total Sale</p>
           </div>
           <div>
-            <p id="aditional-value">100k+</p>
-            <p id="aditional-info">Auctions</p>
+            <h5 className="aditional-value">100k+</h5>
+            <p className="aditional-info">Auctions</p>
           </div>
           <div>
-            <p id="aditional-value">240k+</p>
-            <p id="aditional-info">Artists</p>
+            <h5 className="aditional-value">240k+</h5>
+            <p className="aditional-info">Artists</p>
           </div>
         </div>
       </div>

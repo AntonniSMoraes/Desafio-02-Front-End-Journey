@@ -40,7 +40,7 @@ button {
   gap: 10px;
 }
 
-#sign-up-button {
+.sign-up-button {
   display: none;
 }
 
@@ -123,7 +123,7 @@ button {
     height: 32px;
   }
 
-  #sign-up-button {
+  .sign-up-button {
     display: inline-flex;
     background-color: #a259ff;
     color: white;
@@ -133,6 +133,12 @@ button {
     border: none;
     padding: 0rem 2rem;
     align-items: center;
+    transition: all 0.3s ease;
+  }
+
+  .sign-up-button:hover {
+    transform: scale(0.9, 1);
+    transform-origin: center;
   }
 
   .ul-conf {
@@ -186,7 +192,7 @@ button {
     text-decoration: none;
   }
 
-  #sign-up-button {
+  .sign-up-button {
     height: 60px;
     padding: 0rem 2.5rem;
   }

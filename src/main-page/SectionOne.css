@@ -48,12 +48,21 @@
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  font: 600 16px/140% "Work Sans";
-  color: white;
   width: 315px;
   height: 60px;
   background-color: #a259ff;
   border-radius: 20px;
+	transition: all 0.3s ease;
+}
+
+.get-started:hover{
+  transform: scale(0.90, 1);
+  transform-origin: center;
+}
+
+.get-started-txt {
+  font: 600 16px/140% "Work Sans";
+  color: white;
 }
 
 #rocket {
@@ -66,12 +75,12 @@
   gap: 50px;
 }
 
-#aditional-value {
+.aditional-value {
   font: 700 22px/160% "Space Mono";
   color: white;
 }
 
-#aditional-info {
+.aditional-info {
   font: 400 16px/140% "Work Sans";
   color: white;
 }
@@ -101,7 +110,6 @@
   }
 
   .get-started {
-    font: 600 16px/140% "Work Sans";
     width: 224px;
     margin-bottom: 1rem;
   }
@@ -110,7 +118,7 @@
 /* pc */
 @media (min-width: 1024px) {
   .first-pg {
-    padding: 80px 495px;
+    /* padding: 80px 495px; */
   }
 
   .first-pg-txt {
@@ -132,5 +140,20 @@
 
   .organizer-two {
     margin: -10rem 0 0 -52rem;
+  }
+
+  .info-pg {
+    margin-right: -15rem;
+  }
+
+  .aditional-value {
+    width: 130px;
+    font: 700 28px/140% "Space Mono";
+    color: white;
+  }
+  
+  .aditional-info {
+    font: 400 24px/160% "Work Sans";
+    color: white;
   }
 }
