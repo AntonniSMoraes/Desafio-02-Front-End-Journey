@@ -1,10 +1,13 @@
 
 import './App.css';
-import Header from './commons/Header';
-import Main from './main-page/Main';
-import Marketplace from './marketplace/Marketplace';
-import Footer from './commons/Footer';
 import { useState, useEffect } from 'react';
+import { Route, Routes } from 'react-router';
+import Header from './commons/Header';
+import Footer from './commons/Footer';
+import Main from './main-page/Main';
+import Marketplace from './pages/Marketplace';
+import ConnectWallet from './pages/ConnectWallet';
+import CreateAccount from './pages/CreateAccount';
 
 export default function App() {
 
@@ -43,13 +46,13 @@ export default function App() {
     /* Usar "nfts={nfts} artists={artists}" para passar os dados
     para o componente */
     return (
-      <div>
-        <Header />
-        <Main artists={artists} nfts={nfts} />
-        {/* <Marketplace nfts={nfts} artists={artists} /> */}
-        {/* <section className='footer_section'>
-          <Footer /> 
-        </section> */}
-      </div>
+      <>
+        <Routes>
+          <Route path='/' element={<><Header />  <Main nfts={nfts} artists={artists}/>  <Footer /></>} />
+          <Route path='/marketplace' element={<><Header />  <Marketplace nfts={nfts} artists={artists}/>  <Footer /></>} />
+          <Route path='/create-account' element={<><Header />  <CreateAccount />  <Footer /></>} />
+          <Route path='/connect-wallet' element={<><Header />  <ConnectWallet />  <Footer /></>} />
+        </Routes>
+      </>
   );
 }
