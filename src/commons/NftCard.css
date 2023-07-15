@@ -1,0 +1,76 @@
+
+:root{
+    --default-margin-width: 60%;
+    --bg-secondary: #3B3B3B;
+    --bg: #2B2B2B;
+    --bg-whitest: #858584;
+}
+
+.nft_card:hover{
+    transform: scale(0.95);
+}
+
+.nft_card {
+    flex: 0 0 330px;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+    background-color: var(--bg);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nft_card > img{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.artist_info{
+    display:flex;
+    gap:10px;
+    align-items: center;
+}
+
+.artist_info > img{
+    height: 24px;
+    border-radius:15px;
+}
+
+.others_infos{
+    display:flex;
+    width: 100%;;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.NFT_info{
+    display: flex;
+    padding: 20px 30px 25px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.NFT_info h1 {
+    font: 600 22px/140% 'Work Sans';
+    text-transform: capitalize;
+    color:white;
+}
+
+.artist_info h2{
+    color: white;
+    font: 400 16px/140% 'Space Mono';
+}
+
+.others_infos_subs h3{
+    font: 400 12px/110% 'Space Mono';
+    color: #858584;
+    margin-bottom: 10px;
+}
+
+.others_infos_subs p{
+    color: white;
+    font: 400 16px/110% 'Space Mono';
+}

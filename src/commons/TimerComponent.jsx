@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./timerComponent.css";
+import "./TimerComponent.css";
 
 function TimerComponent(props) {
   const { auctionEndsIn, firstText, textButton } = props;
@@ -52,7 +52,7 @@ function TimerComponent(props) {
             <span>Seconds</span>
           </div>
         </div>
-        <button>{textButton}</button>
+        <button className="buttonBid">{textButton}</button>
       </div>
     </div>
   );

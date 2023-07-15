@@ -1,10 +1,11 @@
 
 import './App.css';
-import Header from './commons/Header';
-import Main from './main-page/Main';
-import Marketplace from './marketplace/Marketplace';
-import Footer from './commons/Footer';
+// import Header from './commons/Header';
+// import Main from './main-page/Main';
+// import Marketplace from './marketplace/Marketplace';
+// import Footer from './commons/Footer';
 import { useState, useEffect } from 'react';
+import NftPage from './pages/NftPage';
 
 export default function App() {
 
@@ -44,12 +45,14 @@ export default function App() {
     para o componente */
     return (
       <div>
-        <Header />
+        {/* <Header />
         <Main />
         <Marketplace nfts={nfts} artists={artists} />
         <section className='footer_section'>
           <Footer /> 
-        </section>
+        </section> */}
+        < NftPage nfts={nfts} artists={artists}/>
+
       </div>
   );
 }
