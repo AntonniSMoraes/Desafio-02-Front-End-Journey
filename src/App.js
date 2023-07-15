@@ -2,9 +2,11 @@
 import './App.css';
 import Header from './commons/Header';
 import Main from './main-page/Main';
-import Marketplace from './marketplace/Marketplace';
+import Marketplace from './pages/Marketplace';
 import Footer from './commons/Footer';
 import { useState, useEffect } from 'react';
+import { Route, Routes } from 'react-router';
+import CreateAccount from './pages/CreateAccount';
 
 export default function App() {
 
@@ -43,13 +45,22 @@ export default function App() {
     /* Usar "nfts={nfts} artists={artists}" para passar os dados
     para o componente */
     return (
-      <div>
+      <>
+        <Routes>
+          <Route path='/' element={<Main />} />
+          <Route path='/marketplace' element={<Marketplace nfts={nfts} artists={artists}/>} />
+          <Route path='/create-account' element={<CreateAccount />} />v
+          <Route path='/connect-wallet' element={<Connect />} />
+        </Routes>
+      </>
+  );
+}
+
+
+{/* <div>
         <Header />
         <Main />
-        {/* <Marketplace nfts={nfts} artists={artists} /> */}
         <section className='footer_section'>
           <Footer /> 
         </section>
-      </div>
-  );
-}
+        </div> */}
