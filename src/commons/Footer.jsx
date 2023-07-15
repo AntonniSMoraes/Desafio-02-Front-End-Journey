@@ -1,5 +1,6 @@
 
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
@@ -31,9 +32,9 @@ export default function Footer() {
 
                 <div className='columnItem'>
                     <h1>Explore</h1>
-                    <a href=''>Marketplace</a>
-                    <a href=''>Rankings</a>
-                    <a href=''>Connect a wallet</a>
+                    <Link to='/marketplace'>Marketplace</Link>
+                    <Link to='/rankings'>Rankings</Link>
+                    <Link to='/connect-wallet'>Connect a wallet</Link>
                 </div>
 
                 <div className='columnItem'>

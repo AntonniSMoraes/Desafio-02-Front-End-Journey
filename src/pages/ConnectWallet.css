@@ -1,0 +1,112 @@
+
+#connect-wallet-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 70px;
+    background: #2B2B2B;
+}
+
+#connect-wallet-page > img{
+    width:100%;
+    height:650px;
+    object-fit: cover;
+}
+
+/* Trecho direito da página */
+
+.connect-wallet-container {
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.connect-wallet-container > h1{
+    color: white;
+    font: 600 51px/110% "Work Sans", Helvetica;
+    text-transform: capitalize;
+}
+
+.connect-wallet-container > p{
+    color: white;
+    font: 400 22px/160% 'Work Sans';
+    text-transform: capitalize;
+    max-width: 51%;
+}
+
+.connect-wallet-links-container{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.connect-wallet-links {
+	max-width: 330px;
+	display: flex;
+	gap: 10px;
+	border-radius: 20px;
+	background: #3b3b3b;
+	border: 1px solid #a259ff;
+	height: 72px;
+	padding: 0px 20px 0px 40px;
+	align-items: center;
+	transition: all 0.3s ease;
+}
+
+.connect-wallet-links > h3{
+    color: white;
+    font: 600 22px/140% 'Work Sans';
+    text-transform: capitalize;
+}
+
+.connect-wallet-links:hover {
+    transform: scale(0.95);
+}
+
+@media (max-width: 1230px) {
+    .connect-wallet-container > h1{
+        font-size: 38px;
+    }
+
+    .connect-wallet-container > p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 830px) {
+    #connect-wallet-page{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    #connect-wallet-page > img{
+        width:100%;
+        height:232px;
+        object-fit: cover;
+    }
+
+    .connect-wallet-container {
+        justify-self: center;
+        max-width: 350px;
+        margin: 40px 0;
+    }
+
+    .connect-wallet-container > h1{
+        padding-left: 25px;
+    }
+
+    .connect-wallet-container > p{
+        max-width: 100%;
+        padding-left: 25px;
+    }
+
+    .connect-wallet-links {
+        width: 310px;
+        align-self: center;
+    }
+
+    .connect-wallet-links-button{
+        width: 310px;
+        align-self: center;
+    }
+}

@@ -1,11 +1,12 @@
 
 import './App.css';
-import Header from './commons/Header';
-import Main from './main-page/Main';
-import Marketplace from './pages/Marketplace';
-import Footer from './commons/Footer';
 import { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router';
+import Header from './commons/Header';
+import Footer from './commons/Footer';
+import Main from './main-page/Main';
+import Marketplace from './pages/Marketplace';
+import ConnectWallet from './pages/ConnectWallet';
 import CreateAccount from './pages/CreateAccount';
 
 export default function App() {
@@ -47,20 +48,11 @@ export default function App() {
     return (
       <>
         <Routes>
-          <Route path='/' element={<Main />} />
-          <Route path='/marketplace' element={<Marketplace nfts={nfts} artists={artists}/>} />
-          <Route path='/create-account' element={<CreateAccount />} />v
-          <Route path='/connect-wallet' element={<Connect />} />
+          <Route path='/' element={<><Header /> <Main nfts={nfts} artists={artists}/> <section className='footer_section'><Footer /></section></>} />
+          <Route path='/marketplace' element={<><Header /> <Marketplace nfts={nfts} artists={artists}/> <section className='footer_section'><Footer /></section></>} />
+          <Route path='/create-account' element={<><Header /> <CreateAccount /> <section className='footer_section'><Footer /></section></>} />
+          <Route path='/connect-wallet' element={<><Header /> <ConnectWallet /> <section className='footer_section'><Footer /></section></>} />
         </Routes>
       </>
   );
 }
-
-
-{/* <div>
-        <Header />
-        <Main />
-        <section className='footer_section'>
-          <Footer /> 
-        </section>
-        </div> */}
