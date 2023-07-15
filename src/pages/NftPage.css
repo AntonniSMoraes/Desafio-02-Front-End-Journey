@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap");
+
+.wholepage {
+  font-family: Work Sans;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "divImage divImage"
+    "divTexts divTimer"
+    "divTexts divTimer";
+}
+
+.divImage {
+  grid-area: divImage;
+  width: 100vw; /* Largura da viewport */
+}
+
+.divImage img {
+  width: 100%; /* Largura de 100% da div */
+  height: 100%; /* Manter a proporção da imagem */
+}
+
+.divTexts {
+  grid-area: divTexts;
+  text-align: left;
+  padding-left: 100px;
+}
+
+.divTexts > .divTitle > p > span {
+  color: #858584;
+  padding-top: 0px;
+}
+
+.divTimer {
+  grid-area: divTimer;
+}
+
+.divCreated {
+  color: #858584;
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.createdBy {
+  margin-bottom: 5px; /* Ajuste o valor conforme necessário */
+  font-family: Space Mono;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  color: white;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.profile:hover {
+  transform: scale(0.9);
+}
+
+.profile > .avatarImage {
+  width: 30px; /* Defina o tamanho desejado para a imagem */
+  height: 30px; /* Defina o tamanho desejado para a imagem */
+  margin-right: 10px; /* Ajuste o valor conforme necessário */
+}
+
+.divDescription {
+  font-size: 20px;
+}
+
+.divDescription > h3 {
+  color: #858584;
+  font-family: Space Mono;
+}
+
+.divDetails {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  font-family: Space Mono;
+}
+
+.divTitleDetails {
+  color: #858584;
+}
+
+.divDetailsText1,
+.divDetailsText2 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.globeImage {
+  margin-right: 10px;
+}
+
+.divTitleTags {
+  color: #858584;
+  font-size: 22px;
+}
+
+.divTagsText {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.divTagsText h3 {
+  background-color: #3b3b3b;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: transform 0.6s ease;
+}
+
+.divTagsText h3:hover {
+  transform: scale(0.9);
+}
