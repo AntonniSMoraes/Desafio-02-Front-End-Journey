@@ -7,45 +7,6 @@ import Card from '../commons/ColectionCard'
 
 export default function Marketplace(props){
 
-    // const collectionsDummyData = [
-    //     {
-    //         id: '1',
-    //         title: 'bubble 1',
-    //         image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png',
-    //         artist: 'Brandie Cooke',
-    //         artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-2@2x.png',
-    //         price: 50,
-    //         highestBid: 100,
-    //     },
-    //     {
-    //         id: '2',
-    //         title: 'indulge 2',
-    //         image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-72@2x.png',
-    //         artist: 'Harvey Velazquez',
-    //         artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-2@2x.png',
-    //         price: 50,
-    //         highestBid: 100,
-    //     },
-    //     {
-    //         id: '3',
-    //         title: 'credit 1',
-    //         image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png',
-    //         artist: 'Frederic Huber',
-    //         artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-2@2x.png',
-    //         price: 50,
-    //         highestBid: 100,
-    //     },
-    //     {
-    //         id: '4',
-    //         title: 'Teste 1',
-    //         image: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-72@2x.png',
-    //         artist: 'Buddy Braun',
-    //         artistPhoto: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-33@2x.png',
-    //         price: 50,
-    //         highestBid: 100,
-    //     },
-    // ];
-
     // 'barFocus' define qual barra está selecionada, se 'NFT' ou 'Collections'
     const [barFocus, setBarFocus] = useState(0);
 
