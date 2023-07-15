@@ -131,4 +131,8 @@ button > span{
     .titles > p{
         display:none;
     }
+
+    button > span{
+        display:none;
+    }
 }
