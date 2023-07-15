@@ -6,12 +6,16 @@
     --bg-whitest: #858584;
 }
 
+.footer_section{
+  background: #3B3B3B;
+  width: 100%;
+}
+
 footer{
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
-
     padding:50px 0;
 }
 
