@@ -83,6 +83,7 @@ footer{
     outline: none;
     color: #2B2B2B;
     font: 400 16px/140% 'Work Sans';
+    width: 173px;
 }
 
 .subscribe-button{
@@ -116,7 +117,7 @@ footer > p{
 }
 
 
-@media (max-width: 834px) {
+@media (max-width: 1024px) {
     .columns{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -151,4 +152,3 @@ footer > p{
         border: none;
     }
 }
-

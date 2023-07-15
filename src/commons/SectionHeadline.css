@@ -1,0 +1,43 @@
+.txtbox {
+  display: flex;
+  flex-direction: column;
+  width: 315px;
+  height: 93px;
+  gap: 10px;
+}
+
+.title {
+  font: 600 28px/140% "Work Sans";
+  color: white;
+}
+
+.txt {
+  font: 400 16px/140% "Work Sans";
+  color: white;
+}
+
+@media (min-width: 415px) {
+  .txtbox {
+    width: 400px;
+  }
+}
+
+@media (min-width: 830px) {
+  .txtbox {
+    width: 680px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .txtbox {
+    width: 980px;
+  }
+
+  .title {
+    font: 600 38px/120% "Work Sans";
+  }
+
+  .txt {
+    font: 400 22px/160% "Work Sans";
+  }
+}

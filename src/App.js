@@ -46,7 +46,7 @@ export default function App() {
       <div>
         <Header />
         <Main />
-        <Marketplace nfts={nfts} artists={artists} />
+        {/* <Marketplace nfts={nfts} artists={artists} /> */}
         <section className='footer_section'>
           <Footer /> 
         </section>
