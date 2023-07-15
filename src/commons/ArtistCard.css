@@ -1,0 +1,135 @@
+.card {
+  width: 275px;
+  height: 100px;
+  display: flex;
+  padding: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  background: #3b3b3b;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.card:nth-child(n-5) {
+  display: flex;
+}
+
+.card:nth-child(n+6) {
+  display: none;
+}
+
+.card:hover {
+  transform: scale(0.95, 0.95);
+  transform-origin: center;
+}
+
+.artist-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: -1rem;
+  width: 195px;
+}
+
+.position {
+  display: flex;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #2b2b2b;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  color: #858584;
+  font: 400 16px/140% "Space Mono";
+  margin: -3.5rem 0 0 -1.2rem;
+}
+
+.photo {
+  width: 60px;
+  border-radius: 50px;
+}
+
+.name {
+  /* width: 175px; */
+  font: 600 22px/140% "Work Sans";
+  color: white;
+}
+
+.sales {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 195px;
+}
+
+.total {
+  color: #858584;
+  font: 400 16px/140% "Work Sans";
+}
+
+.price {
+  color: white;
+  font: 400 16px/140% "Space Mono";
+}
+
+@media (min-width: 500px) {
+  .card {
+    width: 290px;
+    display: flex;
+  }
+
+  .artist-info {
+    align-items: flex-start;
+  }
+  
+  .position {
+    margin: -3.5rem 0 0 -1rem;
+  }
+  
+  .photo {
+    width: 60px;
+    border-radius: 50px;
+  }
+  
+}
+
+@media (min-width: 600px) {
+  .card:nth-child(n-6) {
+    display: flex;
+  }
+
+  .card:nth-child(n+7) {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .card {
+    width: 240px;
+    height: 238px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .position {
+    margin: -16rem 0 0 -16rem;
+  }
+
+  .photo {
+    width: 110px;
+    border-radius: 100px;
+  }
+
+  .artist-info {
+    align-items: center;
+  }
+
+  .card:nth-child(n) {
+    display: flex;
+  }
+}

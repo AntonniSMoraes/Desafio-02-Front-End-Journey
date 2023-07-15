@@ -111,16 +111,19 @@
 
   .get-started {
     width: 224px;
+    margin-top: -8rem;
     margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .get-started {
+    margin-top: -4rem;
   }
 }
 
 /* pc */
 @media (min-width: 1024px) {
-  .first-pg {
-    /* padding: 80px 495px; */
-  }
-
   .first-pg-txt {
     width: 480px;
     padding-left: 5rem;
@@ -155,5 +158,9 @@
   .aditional-info {
     font: 400 24px/160% "Work Sans";
     color: white;
+  }
+
+  .get-started {
+    margin-top: -12rem;
   }
 }
