@@ -8,6 +8,7 @@ import Main from './main-page/Main';
 import Marketplace from './pages/Marketplace';
 import ConnectWallet from './pages/ConnectWallet';
 import CreateAccount from './pages/CreateAccount';
+// import NftPage from './pages/NftPage';
 
 export default function App() {
 
@@ -22,29 +23,19 @@ export default function App() {
   // Requisição HTTP com hook useEffect
    useEffect(() => {
       fetch(ARTISTS_URI)
-         .then((res) => res.json())
-         .then((data) => {
-            setArtists(data);
-         })
-         .catch((err) => {
-            console.log(err.message);
-         });
+         .then(res => res.json())
+         .then(data => setArtists(data))
+         .catch(err => console.log(err.message));
    }, []);
 
    useEffect(() => {
     fetch(NFTS_URI)
-       .then((res) => res.json())
-       .then((data) => {
-          setNfts(data);
-       })
-       .catch((err) => {
-          console.log(err.message);
-       });
+       .then(res => res.json())
+       .then(data => setNfts(data))
+       .catch(err => console.log(err.message));
     }, []);
 
-
-    /* Usar "nfts={nfts} artists={artists}" para passar os dados
-    para o componente */
+    /* Usar "nfts={nfts} artists={artists}" para passar os dados para o componente */
     return (
       <>
         <Routes>
@@ -52,6 +43,7 @@ export default function App() {
           <Route path='/marketplace' element={<><Header />  <Marketplace nfts={nfts} artists={artists}/>  <Footer /></>} />
           <Route path='/create-account' element={<><Header />  <CreateAccount />  <Footer /></>} />
           <Route path='/connect-wallet' element={<><Header />  <ConnectWallet />  <Footer /></>} />
+          {/* <Route path='/nft-page' element={<><Header />  <NftPage nfts={nfts} artists={artists} />  <Footer /></>} /> */}
         </Routes>
       </>
   );
