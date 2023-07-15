@@ -33,9 +33,9 @@ export default function Footer() {
 
                     <div className='columnItem'>
                         <h1>Explore</h1>
-                        <Link to='/marketplace'>Marketplace</Link>
-                        <Link to='/rankings'>Rankings</Link>
-                        <Link to='/connect-wallet'>Connect a wallet</Link>
+                        <a href='/marketplace'>Marketplace</a>
+                        <a href='/rankings'>Rankings</a>
+                        <a href='/connect-wallet'>Connect a wallet</a>
                     </div>
 
                     <div className='columnItem'>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
+import {Link} from 'react-router-dom';
 
 export default function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -27,13 +28,13 @@ export default function Header() {
           <div className={`overlay ${isActive ? "active" : ""}`} onMouseLeave = {handleMouseLeave}>
             <ul className="burguer-itens ul-conf">
               <li className="li-conf">
-                <a className="a-burguer a-conf" href="/Marketplace">Marketplace</a>
+                <Link className="a-burguer a-conf" to="/marketplace">Marketplace</Link>
               </li>
               <li className="li-conf">
-                <a className="a-burguer a-conf" href="/Rankings">Rankings</a>
+                <Link className="a-burguer a-conf" to="/rankings">Rankings</Link>
               </li>
               <li className="li-conf">
-                <a className="a-burguer a-conf" href="/Connect-a-wallet">Connect a wallet</a>
+                <a className="a-burguer a-conf" href="/connect-wallet">Connect a wallet</a>
               </li>
             </ul>
           </div>
@@ -43,13 +44,13 @@ export default function Header() {
       <div id="menu-right">
         <ul className="ul-conf">
           <li className="li-conf">
-            <a className="a-conf" href="/Marketplace">Marketplace</a>
+            <a className="a-conf" href="/marketplace">Marketplace</a>
           </li>
           <li className="li-conf">
-            <a className="a-conf" href="/Rankings">Rankings</a>
+            <a className="a-conf" href="/rankings">Rankings</a>
           </li>
           <li className="li-conf">
-            <a className="a-conf" href="/Connect-a-wallet">Connect a wallet</a>
+            <a className="a-conf" href="/connect-wallet">Connect a wallet</a>
           </li>
         </ul>
         <button className="sign-up-button">
