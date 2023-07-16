@@ -24,6 +24,21 @@
   color: white;
 }
 
+.main_pg_nft_gallery{
+  /* background: var(--bg-secondary); */
+  padding: 70px 0;
+  border-bottom: 2px solid #2B2B2B;
+}
+
+.main_pg_nft_gallery_container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1050px;
+  justify-content: center;
+  gap: 30px;
+}
+
 .pg-five-cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
