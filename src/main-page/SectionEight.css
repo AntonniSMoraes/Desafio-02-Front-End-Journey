@@ -1,0 +1,168 @@
+.pg-eight {
+  display: flex;
+  padding: 40px 0px;
+  gap: 10px;
+  background-color: #2b2b2b;
+}
+
+.pg-eight-subs {
+  display: flex;
+  width: 315px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+  gap: 30px;
+  background-color: #3b3b3b;
+  border-radius: 20px;
+}
+
+.last-img {
+  width: 315px;
+  height: 255px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.pg-eight-txtbox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pg-eight-title {
+  font: 600 28px/140% "Work Sans";
+  color: white;
+}
+
+.pg-eight-txt {
+  font: 400 16px/140% "Work Sans";
+  color: white;
+}
+
+.pg-eight-input {
+  display: flex;
+  width: 275px;
+  height: 14px;
+  padding: 16px 20px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 20px;
+  border: 1px solid #858584;
+  background: white;
+  font: 400 16px/140% "Work Sans";
+  color: #2b2b2b;
+}
+
+.pg-eight-subscribe-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.pg-eight-button {
+  display: flex;
+  width: 315px;
+  height: 46px;
+  padding: 0px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 20px;
+  background-color: #a259ff;
+  font: 600 16px/140% "Work Sans";
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.pg-eight-button:hover {
+  transform: scale(0.9, 1);
+  transform-origin: center;
+}
+
+@media (min-width: 730px) {
+  .pg-eight {
+    padding: 40px 30px 80px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pg-eight-subs {
+    width: 690px;
+    flex-direction: row;
+    padding: 40px 30px;
+  }
+
+  .last-img {
+    width: 300px;
+    height: 280px;
+  }
+
+  .input-box {
+    gap: 40px;
+  }
+
+  .pg-eight-subscribe-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .pg-eight-button {
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .pg-eight {
+    padding: 40px 195px 80px 195px;
+  }
+
+  .pg-eight-subs {
+    width: 1050px;
+    padding: 60px;
+    gap: 80px;
+  }
+
+  .last-img {
+    width: 425px;
+    height: 310px;
+  }
+
+  .pg-eight-title {
+    font: 600 38px/120% "Work Sans";
+  }
+
+  .pg-eight-txt {
+    font: 400 22px/160% "Work Sans";
+  }
+
+  .pg-eight-input {
+    width: 405px;
+    height: 26px;
+    padding: 16px 0px 16px 20px;
+  }
+
+  .pg-eight-subscribe-input {
+    flex-direction: row;
+    height: 60px;
+    padding: 16px 0px 16px 20px;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .pg-eight-button {
+    width: 211px;
+    height: 60px;
+    justify-content: center;
+    margin-left: -17rem;
+  }
+}
