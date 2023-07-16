@@ -54,6 +54,7 @@
   border-radius: 20px;
   transition: all 0.3s ease;
   border: 2px solid #a259ff;
+  cursor: pointer;
 }
 
 .ranking:hover {
@@ -150,6 +151,7 @@
     background-color: transparent;
     border-radius: 20px;
     border: 2px solid #a259ff;
+    cursor: pointer;
     margin-left: -20rem;
   }
 

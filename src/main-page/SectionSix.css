@@ -1,0 +1,201 @@
+.pg-six {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pg-six-align-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pg-six-img {
+  display: block;
+  min-width: 390px;
+  width: 100vw;
+  min-height: 590px;
+  height: auto;
+}
+
+.pg-six-org-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.pg-six-bg-filter {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%);
+  width: 100vw;
+  height: 100%;
+}
+
+.pg-six-front {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  gap: 30px;
+  width: 315px;
+  height: 430px;
+}
+
+.align-pg-six-card {
+  margin-left: -10rem;
+}
+
+.pg-six-artist-card {
+  width: 151px;
+  height: 44px;
+  background-color: #3b3b3b;
+  border-radius: 20px;
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.pg-six-artist-pg-txt {
+  font: 400 16px/140% "Work Sans";
+  color: white;
+}
+
+.pg-six-title-box {
+  width: 315px;
+  height: 92px;
+  font: 600 38px/120% "Work Sans";
+  color: white;
+}
+
+.pg-six-timer-box {
+  width: 240px;
+  height: 144px;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  background: rgba(59, 59, 59, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.timer-txt-one {
+  font: 400 12px/110% "Space Mono";
+  color: white;
+}
+
+.pg-six-clock {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: white;
+}
+
+.pg-six-clock-moregap {
+  display: flex;
+  flex-direction: row;
+  gap: 46px;
+  color: white;
+}
+
+.timer-h3 {
+  font: 700 38px/120% "Space Mono";
+}
+
+.see-nft {
+  display: flex;
+  width: 315px;
+  height: 60px;
+  padding: 22px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 20px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.see-nft:hover {
+  transform: scale(0.9, 1);
+  transform-origin: center;
+}
+
+.see-nft-first {
+    display: none;
+}
+
+.see-nft-txt {
+  color: #2b2b2b;
+  font: 600 16px/140% "Work Sans";
+}
+
+@media (min-width: 834px) {
+  .pg-six {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .pg-six-front {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 360px;
+  }
+
+  .pg-six-align-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pg-six-timer-box {
+    margin-top: 6rem;
+    height: 100px;
+  }
+
+  .see-nft {
+    display: none;
+  }
+
+  .align-pg-six-card {
+    margin-left: -18rem;
+  }
+
+  .pg-six-title-box {
+    width: 400px;
+    height: 92px;
+    font: 600 38px/120% "Work Sans";
+    color: white;
+  }
+  .see-nft-first {
+    display: flex;
+    width: 198px;
+    height: 60px;
+    padding: 22px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s ease;
+    margin-left: -17rem;
+    margin-top: -4rem;
+  }
+  
+  .see-nft-first:hover {
+    transform: scale(0.9, 1);
+    transform-origin: center;
+  }
+}

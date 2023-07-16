@@ -1,0 +1,130 @@
+.pg-five {
+  display: flex;
+  padding: 40px 0px 60px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background-color: #2b2b2b;
+}
+
+.pg-five-box {
+  width: 315px;
+  height: 71px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pg-five-title {
+  font: 600 28px/140% "Work Sans";
+  color: white;
+}
+.pg-five-txt {
+  font: 400 16px/140% "Work Sans";
+  color: white;
+}
+
+.pg-five-cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.see-all-one {
+  cursor: pointer;
+  display: none;
+}
+
+.see-all-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 50px;
+  gap: 12px;
+  background: transparent;
+  border-radius: 20px;
+  border: 2px solid #a259ff;
+  width: 315px;
+  cursor: pointer;
+  height: 60px;
+  transition: all 0.3s ease;
+}
+
+.see-all-two:hover {
+  transform: scale(0.9, 1);
+  transform-origin: center;
+}
+
+.see-all-txt {
+  font: 600 16px/140% "Work Sans";
+  color: white;
+}
+
+@media (min-width: 834px) {
+  .pg-five {
+    padding: 40px 195px 80px 195px;
+  }
+
+  .pg-five-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 690px;
+  }
+
+  .pg-five-box {
+    width: 403px;
+  }
+
+  .pg-five-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  .see-all-two {
+    display: none;
+  }
+
+  .see-all-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+    gap: 10px;
+    background: transparent;
+    border-radius: 20px;
+    border: 2px solid #a259ff;
+    width: 187px;
+    height: 60px;
+    transition: all 0.3s ease;
+  }
+
+  .see-all-one:hover {
+    transform: scale(0.9, 1);
+    transform-origin: center;
+  }
+}
+
+@media (min-width: 1000px) {
+    .pg-five {
+      padding: 80px 195px;
+      gap: 60px;
+    }
+  
+    .pg-five-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 900px;
+    }
+ 
+    .pg-five-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      gap: 30px;
+    }
+  }
