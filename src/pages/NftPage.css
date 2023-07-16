@@ -148,7 +148,7 @@
 .divCards {
   display: flex;
   align-items: center;
-  padding: 0px 195px;
+  padding: 0px 400px;
   background: var(--background, #2b2b2b);
   flex-direction: column;
   gap: 60px;
@@ -196,4 +196,15 @@
 
 .buttonArtist:hover {
   transform: scale(0.95);
+}
+
+.divNfts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.Nft_Card {
+  width: 50%;
 }

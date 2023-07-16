@@ -51,7 +51,7 @@ export default function App() {
         <section className='footer_section'>
           <Footer /> 
         </section> */}
-        < NftPage nfts={nfts} artists={artists}/>
+        < NftPage nfts={nfts}/>
 
       </div>
   );

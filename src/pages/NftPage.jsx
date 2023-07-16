@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import TimerComponent from "../commons/TimerComponent";
 import firstImage from "../res/image-place-holder.png";
 import avatarImage from "../res/avatar-placeholder.png";
@@ -17,6 +18,34 @@ function NftPage(props) {
     window.location.href =
       "https://www.animaapp.com/?utm_source=figma-samples&utm_campaign=figma-nftmarket&utm_medium=figma-samples";
   };
+
+  const [nftGalleryContent, setNftGalleryContent] = useState([]);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      if (Array.isArray(props.nfts) && props.nfts.length >= 9) {
+        const updatedNftGalleryContent = [];
+        for (let i = 0; i < 9; i++) {
+          let nftCard = props.nfts[i];
+          let card = (
+            <Nft_Card
+              title={nftCard.name}
+              image={nftCard.image}
+              artist={nftCard.artist}
+              artistPhoto={nftCard.artistPhoto}
+              price={nftCard.price}
+              highestBid={nftCard.highestBid}
+              className={`Nft_UniqueTitle`}
+            />
+          );
+          updatedNftGalleryContent.push(card);
+        }
+        setNftGalleryContent(updatedNftGalleryContent);
+      }
+    }, 200);
+
+    return () => clearTimeout(timeoutId);
+  }, [props.nfts]);
 
   return (
     <div className="wholepage">
@@ -100,18 +129,7 @@ function NftPage(props) {
             </button>
           </div>
         </div>
-        <div className="divNfts">
-            {props.map((nftCard) => (
-                <Nft_Card 
-                title={nftCard.name} 
-                image={nftCard.image} 
-                artist={nftCard.artist}
-                artistPhoto={nftCard.artistPhoto} 
-                price={nftCard.price} 
-                highestBid={nftCard.highestBid} 
-                />
-            ))}
-        </div>
+        <div className="divNfts">{nftGalleryContent}</div>
       </div>
 
       <div className="divTimer">
