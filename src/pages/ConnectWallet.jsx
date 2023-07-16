@@ -12,7 +12,7 @@ export default function ConnectWallet(){
                 <div className='connect-wallet-container'>
                     <h1>Connect Wallet</h1>
                     <p>Choose a wallet you want to connect. There are several wallet providers.</p>
-                    <div class='connect-wallet-links-container'>
+                    <div className='connect-wallet-links-container'>
                         <button className='connect-wallet-links'>
                             <img src='https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/metamask@2x.svg' alt='' />
                             <h3>Metamask</h3>

@@ -3,7 +3,7 @@ import './NftCard.css';
 
 export default function Nft_Card(props){
     return (
-        <div class='nft_card'>
+        <div className='nft_card'>
             <img src={props.image}  alt=''/>
             <div className='NFT_info'>
                 <h1>{props.title}</h1>
@@ -12,7 +12,7 @@ export default function Nft_Card(props){
                     <h2>{props.artist}</h2>
                 </div>
                 <div className='others_infos'>
-                    <div class='others_infos_subs'>
+                    <div className='others_infos_subs'>
                         <h3>Price</h3>
                         <p>{props.price} ETH</p>
                     </div>

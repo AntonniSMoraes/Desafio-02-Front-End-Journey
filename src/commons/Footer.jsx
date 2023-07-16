@@ -9,7 +9,7 @@ export default function Footer() {
                 <div className='columns'>
 
                     <div className='columnItem'>
-                        <div class='marketplace_column'>
+                        <div className='marketplace_column'>
                             <img src='https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/storefront-5@2x.svg' alt=''/>
                             <h1>NFT Marketplace</h1>
                         </div>
@@ -43,7 +43,7 @@ export default function Footer() {
                         <h2>Get exclusive promotions & updates straight to your inbox.</h2>
                         <div className='mail-button'>
                             <input type='email' placeholder='Enter your email here' />
-                            <button class='subscribe-button'>Subscribe</button>
+                            <button className='subscribe-button'>Subscribe</button>
                         </div>
                     </div>
 
