@@ -87,9 +87,9 @@ export default function Marketplace(props){
                 </button>
             </section>
             <section className='nft_gallery'>
-                <section className='nft_gallery_container'>
+                <div className='nft_gallery_container'>
                     {nftGalleryContent}
-                </section>
+                </div>
             </section>
         </div>
     );
