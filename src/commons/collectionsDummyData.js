@@ -1,6 +1,7 @@
 
 export const collectionsDummyData = [
     {
+      id:"1",
       nomeArtista: "MrFox",
       imagemPrincipal:
         "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/primary-photo-placeholder-3@2x.png",
@@ -14,6 +15,7 @@ export const collectionsDummyData = [
         "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder@2x.png",
     },
     {
+      id:"2",
       nomeArtista: "Shroomie",
       imagemPrincipal:
         "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/primary-photo-placeholder@2x.png",
@@ -27,6 +29,7 @@ export const collectionsDummyData = [
         "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-2@2x.png"
     },
     {
+      id:"3",
       nomeArtista: "BeKind2Robots",
       imagemPrincipal:
         "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/primary-photo-placeholder-5@2x.png",

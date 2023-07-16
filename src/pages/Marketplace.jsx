@@ -3,7 +3,7 @@ import './Marketplace.css';
 import NftCard from '../commons/NftCard';
 import React, { useState } from "react";
 import {collectionsDummyData} from '../commons/collectionsDummyData';
-import Card from '../commons/ColectionCard'
+import Card from '../commons/ColectionCard';
 
 export default function Marketplace(props){
 
@@ -24,23 +24,19 @@ export default function Marketplace(props){
     // Determina o que será mostrado na galeria, se as NFTs ou as Collections
     let nftGalleryContent = null;
     if(barFocus === 0){
-        nftGalleryContent = new Array();
-        for(let i = 0; i < props.nfts.length; i++) {
-            let nftCard = props.nfts[i];
-            let artistPhotoObj = props.artists.find(element => element.name === nftCard.artist);
-            let card = <NftCard 
+        nftGalleryContent = props.nfts.map(nftCard =>
+            <NftCard key={nftCard.id}
                 title={nftCard.name} 
                 image={nftCard.image} 
                 artist={nftCard.artist}
-                artistPhoto={artistPhotoObj.photo} 
+                artistPhoto={nftCard.artistPhoto} 
                 price={nftCard.price} 
-                highestBid={nftCard.highestBid} />;
-            nftGalleryContent.push(card);
-        }
+                highestBid={nftCard.highestBid} />  
+        );
     }
     else{
         nftGalleryContent = collectionsDummyData.map(collection => (
-            <Card
+            <Card key={collection.id}
                 nomeArtista={collection.nomeArtista}
                 imagemPrincipal={collection.imagemPrincipal}
                 imagemPqna1={collection.imagemPqna1}
