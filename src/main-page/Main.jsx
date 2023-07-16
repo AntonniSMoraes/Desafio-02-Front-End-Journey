@@ -8,14 +8,14 @@ import SectionSix from "./SectionSix";
 import SectionSeven from "./SectionSeven";
 import SectionEight from "./SectionEight";
 
-export default function Main({artists, nfts}) {
+export default function Main(props) {
   return (
     <body className="scroll">
       <SectionOne />
       <SectionTwo />
-      <SectionThree artists = {artists} nfts={nfts}/>
+      <SectionThree artists = {props.artists} nfts={props.nfts}/>
       <SectionFour />
-      <SectionFive artists = {artists} nfts={nfts}/>
+      <SectionFive artists = {props.artists} nfts={props.nfts}/>
       <SectionSix />
       <SectionSeven />
       <SectionEight />

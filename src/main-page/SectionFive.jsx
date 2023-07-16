@@ -1,24 +1,38 @@
 import "./SectionFive.css";
 import Cards from "../commons/NftCard";
+import { useState, useEffect } from "react";
+
 export default function SectionFive(props) {
-  let nftGalleryContent = new Array();
-  for (let i = 0; i < 3; i++) {
-    let nftCard = props.nfts[i];
-    let artistPhotoObj = props.artists.find(
-      (element) => element.name === nftCard.artist
-    );
-    let card = (
-      <Cards
-        title={nftCard.name}
-        image={nftCard.image}
-        artist={nftCard.artist}
-        artistPhoto={artistPhotoObj.photo}
-        price={nftCard.price}
-        highestBid={nftCard.highestBid}
-      />
-    );
-    nftGalleryContent.push(card);
-  }
+  const [nftGalleryContent, setNftGalleryContent] = useState([]);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      if (Array.isArray(props.nfts) && props.nfts.length >= 3) {
+        const updatedNftGalleryContent = [];
+        for (let i = 0; i < 3; i++) {
+          let nftCard = props.nfts[i];
+          let artistPhotoObj = props.artists.find(
+            (element) => element.name === nftCard.artist
+          );
+          let card = (
+            <Cards
+              title={nftCard.name}
+              image={nftCard.image}
+              artist={nftCard.artist}
+              artistPhoto={artistPhotoObj.photo}
+              price={nftCard.price}
+              highestBid={nftCard.highestBid}
+            />
+          );
+          updatedNftGalleryContent.push(card);
+        }
+        setNftGalleryContent(updatedNftGalleryContent);
+      }
+    }, 200);
+  
+    return () => clearTimeout(timeoutId);
+  }, [props.nfts, props.artists]);
+
   return (
     <section className="pg-five">
       <div className="pg-fic">
