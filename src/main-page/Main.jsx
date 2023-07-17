@@ -13,9 +13,9 @@ export default function Main(props) {
     <body className="scroll">
       <SectionOne />
       <SectionTwo />
-      <SectionThree artists = {props.artists} nfts={props.nfts}/>
+      <SectionThree nfts={props.nfts}/>
       <SectionFour />
-      <SectionFive artists = {props.artists} nfts={props.nfts}/>
+      <SectionFive nfts={props.nfts}/>
       <SectionSix />
       <SectionSeven />
       <SectionEight />

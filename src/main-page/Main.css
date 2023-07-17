@@ -1,3 +1,7 @@
 .scroll {
     overflow: hidden;
 }
+
+.remove-style {
+    text-decoration: none;
+}

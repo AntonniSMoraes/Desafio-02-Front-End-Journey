@@ -2,7 +2,16 @@ import "./SectionThree.css";
 import ArtistCard from "../commons/ArtistCard";
 import React from "react";
 
-export default function SectionThree({ artists, nfts }) {
+export default function SectionThree({ nfts }) {
+  const artistCards = nfts.map((nft) => (
+    <a href="/artist-page" className="remove-style">
+      <ArtistCard
+      id={nft.id}
+      photo={nft.artistPhoto}
+      artist={nft.artist}
+      price={nft.price}/>
+      </a>
+  ));
   return (
     <section className="pg-three">
       <div className="pg-three-head">
@@ -12,25 +21,18 @@ export default function SectionThree({ artists, nfts }) {
             Checkout Top Rated Creators on the NFT Marketplace
           </p>
         </div>
-        <button className="ranking-head">
+        <a href="/rankings" className="remove-style"><button className="ranking-head">
           <img src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/rocketlaunch@2x.svg" />
           <p className="rank-txt">View Rankings</p>
-        </button>
+        </button></a>
       </div>
       <div className="artist-buttons">
-        {artists.map((artist) => (
-          <ArtistCard
-            id={artist.id}
-            photo={artist.photo}
-            artist={artist.name}
-            price={artist.totalSales}
-          />
-        ))}
+        {artistCards}
       </div>
-      <button className="ranking">
+      <a href="/rankings" className="remove-style"><button className="ranking">
         <img src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/rocketlaunch@2x.svg" />
         <p className="rank-txt">View Rankings</p>
-      </button>
+      </button></a>
     </section>
   );
 }
