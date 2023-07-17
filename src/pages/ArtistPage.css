@@ -7,10 +7,118 @@
 }
 
 #artist_page{
-    margin: 0 auto;
-    padding-top: 100px;
+    /* margin: 0 auto; */
+    /* padding-top: 100px; */
     background: var(--bg);
 }
+
+#artist_page > img {
+	height: 320px;
+	object-fit: cover;
+	min-width: 100%;
+}
+
+.ap-top{
+    /* display: flex; */
+    align-items: start;
+    justify-content: space-between;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.ap-top_left{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    margin-top: -79px;
+}
+
+.ap_name_wallet > h1{
+    color: white;
+    font: 600 51px/110% 'Work Sans';
+    text-transform: capitalize;
+}
+
+.ap-top_left > h3{
+    color: #858584;
+    font: 700 22px/160% 'Space Mono';
+    text-transform: capitalize;
+}
+
+.ap-top_left > img{
+    width:120px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.ap-top_span{
+    color: white;
+    font: 700 28px/140% 'Space Mono';
+    text-transform: capitalize;
+}
+
+.artist-sub-info > h3{
+    color: white;
+    font: 400 22px/160% 'Work Sans';
+    text-transform: capitalize;
+}
+
+.ap-top_left > p{
+    color: white;
+    font: 400 22px/160% 'Work Sans';
+    text-transform: capitalize;
+}
+
+.artist-sub-info{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 110px;
+}
+
+.ap_links > img{
+    margin-right: 8px;
+}
+
+.no-border{
+    display: flex;
+    gap: 10px;
+    background:none;
+    border: 2px solid #a259ff;
+    padding: 15px 25px;
+    border-radius: 20px;
+    font: 600 15px/140% 'Work Sans';
+    color: white;
+    height: 60px;
+    align-items: center;
+}
+
+.ap_name_wallet{
+    display:flex;
+    justify-content: space-between;
+}
+
+.ap_wallet_buttons{
+    display:flex;
+    gap:10px;
+}
+
+.border-button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 25px;
+    background: #a259ff;
+    border-radius: 20px;
+    font: 600 15px/140% 'Work Sans';
+    color: white;
+    height: 60px;
+}
+
+
+
+
+/* Galeria */
+
 
 .artists_pg_search_nft_selector{
     background: var(--bg);

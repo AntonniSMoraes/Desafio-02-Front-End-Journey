@@ -88,8 +88,39 @@ export default function ArtistPage(props) {
 
     return (
         <div id='artist_page'>
-            <div>
-                <h3> PARTE DE CIMA AQUI</h3>
+            <img src='https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-4@1x.png' alt='NFT' />
+            <div className='ap-top'>
+                <div className='ap-top_left'>
+                    <img src={payload.photo} alt='artist photo' />
+                    <div className='ap_name_wallet'>
+                        <h1>{payload.name}</h1>
+                        <div className='ap_wallet_buttons'>
+                            <button className='border-button'>
+                                <img src='https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/copy@2x.svg' alt='' />
+                                <h3>0xc0E3...B79C</h3>
+                            </button>
+                            <button className='no-border'>
+                                <img src='https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/plus@2x.svg' alt='' />
+                                <h3>Follow</h3>
+                            </button>
+                        </div>
+                    </div>
+                    <div className='artist-sub-info'>
+                        <h3><span className='ap-top_span'>{payload.volume + "k+"}</span><br />Volume</h3>
+                        <h3><span className='ap-top_span'>{payload.totalSales + "+"}</span><br />Nfts Sold</h3>
+                        <h3><span className='ap-top_span'>{payload.followers + "+"}</span><br />Followers</h3>
+                    </div>
+                    <h3>Bio</h3>
+                    <p>{payload.bio}</p>
+                    <h3>Links</h3>
+                    <div className='ap_links'>
+                        <img src='https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/globe@2x.svg' alt='' />
+                        <img src='https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/discordlogo-7@2x.svg' alt='' />
+                        <img src='https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/youtubelogo-7@2x.svg' alt='' />
+                        <img src='https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/twitterlogo@2x.svg' alt='' />
+                        <img src='https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/instagramlogo@2x.svg' alt='' />
+                    </div>
+                </div>
             </div>
             <section className='artists_pg_search_nft_selector'>
                 <button onClick={handleClick} id='Nfts_bar' className='artists_pg_titles' style={nftBarStyle}>
