@@ -1,8 +1,15 @@
 import styles from './CardRanking.module.css'
+import { useNavigate } from 'react-router';
 
 export default function CardRanking(props) {
+    const navigate = useNavigate();
+
+    const handleArtistPage = () => {
+        navigate('/artist-page');
+    }
+
     return(
-        <div className={styles.ranking_card}>
+        <div className={styles.ranking_card} onClick={handleArtistPage}>
 
             <div className={styles.ranking_cardp1}>
                 <p className={styles.ranking_number}>{props.number}</p>

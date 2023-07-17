@@ -4,7 +4,7 @@ import HeaderRanking from './HeaderRanking'
 import FilterRanking from './FilterRanking';
 
 export default function Ranking(props) {
-
+/*
     const collectionData = [
         {
             id: '1',
@@ -29,7 +29,7 @@ export default function Ranking(props) {
             volume: '12.4'
         }
     ]
-
+*/
     return(
         <div className={styles.ranking_page}>
             <div id={styles.browser_ranking}>
@@ -41,9 +41,9 @@ export default function Ranking(props) {
                 <HeaderRanking/>
                 <div className={styles.table_ranking}>
                     { 
-                        collectionData.map(element => {
+                        props.artists.map(artist => {
                             return(
-                                <CardRanking number={element.id} avatar={element.avatar} artist={element.artist} change={element.change} nfts={element.nfts} volume={element.volume}/>
+                                <CardRanking number={artist.id} avatar={artist.photo} artist={artist.name} change={artist.change} nfts={artist.totalSales} volume={artist.volume}/>
                             );
                         })
                     }    
