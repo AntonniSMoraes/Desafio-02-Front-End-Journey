@@ -35,9 +35,9 @@ $ npm start
 ```
 
 Colaboradores
-- Antonni da Silva Moraes
-- Tomas Rossato Benfica
-- Guilherme Caneda Correa
-- Tales Schifelbein Soares
-- Thais dos Santos
-- Pedro Gabriel Mota Pereira
+- [Antonni da Silva Moraes](https://github.com/AntonniSMoraes)
+- [Tomas Rossato Benfica](https://github.com/trbenfica)
+- [Guilherme Caneda Correa](https://github.com/GuilhermeCaneda)
+- [Tales Schifelbein Soares](https://github.com/talessoares)
+- [Thais dos Santos](https://github.com/ThaisdosSantos)
+- [Pedro Gabriel Mota Pereira](https://github.com/Yiins)
