@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap');
+
+:root{
+    --default-margin-width: 25%;
+    --bg-secondary: #3B3B3B;
+    --bg: #2B2B2B;
+    --bg-whitest: #858584;
+}
+
+.ranking_page{
+    background-color:  #3B3B3B;
+    margin: 0 auto;
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 100vw;
+    padding-top: 100px; /*vaisair*/
+}
+
+.ranking_page > div{
+    width: 1050px;
+}
+
+#browser_ranking{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 80px;
+}
+
+.ranking_content{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-top: -1px;
+    gap: 20px;
+    padding: 40px 0px;
+}
+
+.table_ranking{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+
+.h2_ranking_page{
+    color: var(--white, #ffffff);
+    font-family: Work Sans;
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; 
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+}
+
+.p_ranking_page{
+    color: var(--white, #FFF);
+    font-family: Work Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 35.2px */
+    margin: 0;
+}
+
+
+
+
+
+@media (max-width: 1279px){
+    .ranking_page > div{
+        width: 690px;
+    }
+
+    .h2_ranking_page{
+        color: var(--white, #FFF);
+        font-family: Work Sans;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 45.6px */
+        text-transform: capitalize;
+    }
+
+    .p_ranking_page{
+        color: var(--white, #FFF);
+        font-family: Work Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 22.4px */
+    }
+    #browser_ranking{
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 833px){
+    .ranking_page > div{
+        max-width: 315px;
+    }
+
+    .h2_ranking_page{
+        font-size: 28px;
+    }
+
+    .p_ranking_page{
+        color: var(--white, #FFF);
+        font-family: Work Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 22.4px */
+    }
+    #browser_ranking{
+        padding-bottom: 30px;
+    }
+}

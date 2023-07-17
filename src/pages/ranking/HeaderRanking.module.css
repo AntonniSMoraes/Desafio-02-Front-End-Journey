@@ -1,0 +1,102 @@
+.header_ranking{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 1px solid var(--background-secondary, #3B3B3B);
+    padding: 0px 20px;
+    height: 48px;
+    line-height: 22.4px;
+    margin-top: -2px;
+}
+.header_ranking > div> p{
+    padding: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    font-family: Space Mono;
+    color: var(--caption-label-text, #858584);
+}
+.header_ranking > .headerp1{
+    display: flex;
+    /*width: 490px;*/
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+    padding-left: 10px;
+}
+.header_ranking > .headerp2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+.header_ranking > .headerp2 > p{    
+    display: flex;
+    width: 160px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media (max-width: 1279px){
+    .header_ranking{
+        padding: 0px 25px;
+    }
+    .header_ranking > .headerp1{
+        display: flex;
+        width: 430px;
+        align-items: center;
+        gap: 30px;
+        flex-shrink: 0;
+        padding-left: 0;
+    }
+    .headerp2{
+        width: 220px;
+    }
+    .header_ranking > .headerp2 > p{    
+        display: flex;
+        width: 100px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #nftsHeaderRanking{
+        display: none;
+    }
+}
+
+@media (max-width: 833px){
+    .header_ranking{
+        padding: 0px 8px;
+        gap: 0;
+        justify-content: space-between;
+    }
+    .header_ranking > .headerp1{
+        display: flex;
+        width: 215px;
+        align-items: center;
+        gap: 20px;
+        flex-shrink: 0;
+        padding-left: 12px;
+    }
+    .header_ranking > div> p{
+        font-size: 12px;
+    }
+    .headerp2{
+        width: 100px;
+    }
+    .header_ranking > .headerp2 > p{    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 65px;
+    }
+    #nftsHeaderRanking{
+        display: none;
+    }
+
+    #changeHeaderRanking{
+        display: none;
+    }
+}

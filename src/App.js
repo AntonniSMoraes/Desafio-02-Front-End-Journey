@@ -8,7 +8,8 @@ import Main from './main-page/Main';
 import Marketplace from './pages/Marketplace';
 import ConnectWallet from './pages/ConnectWallet';
 import CreateAccount from './pages/CreateAccount';
-import NftPage from './pages/NftPage';
+import Ranking from './pages/ranking/Ranking'
+// import NftPage from './pages/NftPage';
 
 export default function App() {
 
