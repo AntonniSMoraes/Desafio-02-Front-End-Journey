@@ -32,7 +32,6 @@ function NftPage(props) {
 
   // Busca trabalhos correlatos do artista para exibir em "More from the artist"
   const moreFromTheArtist = props.nfts.filter(nft => nft.artist === payload.artist);
-  console.log(moreFromTheArtist);
   const nftGalleryContent = moreFromTheArtist.map(nftCard =>
     <NftCard key={nftCard.id}
                 title={nftCard.name} 

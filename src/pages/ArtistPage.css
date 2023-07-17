@@ -1,0 +1,76 @@
+
+:root{
+    --default-margin-width: 25%;
+    --bg-secondary: #3B3B3B;
+    --bg: #2B2B2B;
+    --bg-whitest: #858584;
+}
+
+#artist_page{
+    margin: 0 auto;
+    padding-top: 100px;
+    background: var(--bg);
+}
+
+.search_nft_selector{
+    background: var(--bg);
+    border-top: 1px solid var(--bg-secondary);
+    display: flex;
+    justify-content: center;
+}
+
+.titles {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 20px 10%;
+    background: none;
+    color: white;
+    font: 600 22px/140% 'Work Sans';
+    text-transform: capitalize;
+    text-align: center;
+}
+
+button > span{
+    color: white;
+    font: 400 16px/140% 'Space Mono';
+    padding:5px 15px;
+    border-radius:30px;
+    background: #858584;
+}
+
+.nft_gallery{
+    background: var(--bg-secondary);
+    padding: 70px 0;
+    border-bottom: 2px solid #2B2B2B;
+}
+
+.nft_gallery_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1050px;
+    justify-content: center;
+    gap: 30px;
+}
+
+@media (max-width: 1100px){
+
+    #marketplace_page{
+        padding-top: 0;
+    }
+
+    .titles > p{
+        display:none;
+    }
+
+    button > span{
+        display:none;
+    }
+
+    .titles{
+        padding: 20px 5%;
+        font: 600 16px/140% 'Work Sans';
+        text-transform: capitalize;
+    }
+}
