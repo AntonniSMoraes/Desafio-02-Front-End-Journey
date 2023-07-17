@@ -13,6 +13,7 @@ export default function SectionTwo() {
       <div className="cards">
         {collectionsDummyData.map((collection) => (
         <Card
+          key ={collection.id}
           nomeArtista={collection.nomeArtista}
           imagemPrincipal={collection.imagemPrincipal}
           imagemPqna1={collection.imagemPqna1}
