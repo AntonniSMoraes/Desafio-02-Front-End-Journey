@@ -14,6 +14,7 @@ export default function SectionTwo() {
         {collectionsDummyData.map((collection) => (
         <Card
           key ={collection.id}
+          id ={collection.id}
           nomeArtista={collection.nomeArtista}
           imagemPrincipal={collection.imagemPrincipal}
           imagemPqna1={collection.imagemPqna1}
