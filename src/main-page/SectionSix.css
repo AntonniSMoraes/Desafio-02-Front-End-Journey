@@ -18,7 +18,8 @@
   min-width: 390px;
   width: 100vw;
   min-height: 590px;
-  height: auto;
+  height: 700px;
+  object-fit: cover;
 }
 
 .pg-six-org-images {
@@ -35,7 +36,7 @@
   justify-content: center;
   background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%);
   width: 100vw;
-  height: 100%;
+  height: 700px;
 }
 
 .pg-six-front {
