@@ -53,10 +53,11 @@ export default function Header() {
             <a className="a-conf" href="/connect-wallet">Connect a wallet</a>
           </li>
         </ul>
-        <button className="sign-up-button">
+        <a href="/create-account"><button className="sign-up-button">
           <img id="sign-up" src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/user@2x.svg"/>
           <h5 className="h5-conf">Sign Up</h5>
         </button>
+        </a>
       </div>
     </header>
   );
