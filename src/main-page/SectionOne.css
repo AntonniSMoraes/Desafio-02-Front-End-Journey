@@ -105,13 +105,13 @@
   }
 
   .organizer-two {
-    margin-left: -27rem;
-    margin-top: -5rem;
+    margin-left: -330px;
+    margin-top: -7rem;
   }
 
   .get-started {
     width: 224px;
-    margin-top: -8rem;
+    /* margin-top: -8rem; */
     margin-bottom: 1rem;
   }
 }
@@ -126,7 +126,7 @@
 @media (min-width: 1024px) {
   .first-pg-txt {
     width: 480px;
-    padding-left: 5rem;
+    /* padding-left: 5rem; */
   }
 
   .title {
@@ -161,6 +161,6 @@
   }
 
   .get-started {
-    margin-top: -12rem;
+    /* margin-top: -12rem; */
   }
 }

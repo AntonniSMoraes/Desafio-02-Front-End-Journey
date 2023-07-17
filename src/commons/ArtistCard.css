@@ -101,7 +101,8 @@
     justify-content: center;
   }
   .position-photo {
-    margin: -16rem 0 0 -16rem;
+    /* margin: -16rem 0 0 -16rem; */
+    margin: -180px 180px 0px 10px;
   }
 
   .photo-artist {
