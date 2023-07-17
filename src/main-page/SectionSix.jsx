@@ -13,7 +13,7 @@ export default function SectionSix() {
       <div className="pg-six-front">
         <div className="pg-six-align-front">
           <div className="align-pg-six-card">
-            <a className="pg-six-artist-card" href="/">
+            <a className="pg-six-artist-card" href="/artist-page">
               <img src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-2@2x.png" />
               <p className="pg-six-artist-pg-txt">Shroomie</p>
             </a>
@@ -21,10 +21,10 @@ export default function SectionSix() {
           <div className="pg-six-title-box">
             <h3>Magic Mashrooms</h3>
           </div>
-          <button className="see-nft-first">
+          <a href="/nft-page" className="remove-style"><button className="see-nft-first">
             <img src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/eye-5@2x.svg" />
             <p className="see-nft-txt">See NFT</p>
-          </button>
+          </button></a>
         </div>
         <div className="pg-six-timer-box">
           <p className="timer-txt-one">Auction ends in:</p>
@@ -42,10 +42,10 @@ export default function SectionSix() {
           </div>
         </div>
         <div>
-          <button className="see-nft">
+        <a href="/nft-page" className="remove-style"><button className="see-nft">
             <img src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/eye-5@2x.svg" />
             <p className="see-nft-txt">See NFT</p>
-          </button>
+          </button></a>
         </div>
       </div>
     </section>

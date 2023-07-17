@@ -1,7 +1,12 @@
-
+import { useNavigate } from 'react-router';
 import './NftCard.css';
 
 export default function Nft_Card(props){
+    const navigate = useNavigate();
+
+    const handleNFTpage = () => {
+        navigate('/nft-page');
+    }
 
     // Define a cor do background
     const backgroundOptions = {
@@ -19,7 +24,7 @@ export default function Nft_Card(props){
     }
 
     return (
-        <div className='nft_card' style={bgColor}>
+        <button className='nft_card' style={bgColor} onClick={handleNFTpage}>
             <img src={props.image}  alt=''/>
             <div className='NFT_info'>
                 <h1>{props.title}</h1>
@@ -38,6 +43,6 @@ export default function Nft_Card(props){
                     </div>
                 </div>
             </div>
-        </div>
+        </button>
     );
 }

@@ -43,6 +43,8 @@ export default function App() {
           <Route path='/marketplace' element={<><Header />  <Marketplace nfts={nfts} artists={artists}/>  <Footer /></>} />
           <Route path='/create-account' element={<><Header />  <CreateAccount />  <Footer /></>} />
           <Route path='/connect-wallet' element={<><Header />  <ConnectWallet />  <Footer /></>} />
+          {/* <Route path='/artist-page' element={<><Header />  <nome-do-componente />  <Footer /></>} /> */}
+          {/* <Route path='/rankings' element={<><Header />  <nome-do-componente />  <Footer /></>} /> */}
           {/* <Route path='/nft-page' element={<><Header />  <NftPage nfts={nfts} artists={artists} />  <Footer /></>} /> */}
         </Routes>
       </>

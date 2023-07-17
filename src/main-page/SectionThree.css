@@ -20,6 +20,15 @@
   gap: 20px;
 }
 
+.artist-buttons .artist-card-conf:nth-child(n) {
+  display: flex;
+}
+
+.artist-buttons .remove-style:nth-child(n+6) {
+  display: none;
+}
+
+
 .txtbox {
   display: flex;
   flex-direction: column;
@@ -43,10 +52,10 @@
 }
 
 .ranking {
+  display: flex;
   width: 315px;
   height: 60px;
   padding: 0px 50px;
-  margin-left: -1rem;
   justify-content: center;
   align-items: center;
   gap: 12px;
@@ -89,6 +98,12 @@
 
   .txtbox {
     width: 600px;
+  }
+  .artist-buttons .remove-style:nth-child(n+6) {
+    display: flex;
+  }
+  .artist-buttons .remove-style:nth-child(n+7) {
+    display: none;
   }
 }
 
@@ -143,7 +158,6 @@
     width: 247px;
     height: 60px;
     padding: 0px 40px;
-    margin-top: -8rem;
     transition: all 0.3s ease;
     justify-content: center;
     align-items: center;
@@ -158,5 +172,11 @@
   .ranking-head:hover {
     transform: scale(0.9, 1);
     transform-origin: center;
+  }
+  .artist-buttons .remove-style:nth-child(n-13) {
+    display: flex;
+  }
+  .artist-buttons .remove-style:nth-child(n+13) {
+    display: none;
   }
 }
