@@ -34,12 +34,10 @@ $ npm install react react-dom react-router-dom
 $ npm start
 ```
 
-
-
 Colaboradores
-- Antonni S. Moraes
-- Tomas
-- Guilherme
-- Tales
-- Thais
-- Pedro
+- Antonni da Silva Moraes
+- Tomas Rossato Benfica
+- Guilherme Caneda Correa
+- Tales Schifelbein Soares
+- Thais dos Santos
+- Pedro Gabriel Mota Pereira
