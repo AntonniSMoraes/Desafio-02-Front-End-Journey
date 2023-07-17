@@ -5,6 +5,7 @@ import './App.css';
 // import Marketplace from './marketplace/Marketplace';
 // import Footer from './commons/Footer';
 import { useState, useEffect } from 'react';
+import { Route, Routes } from 'react-router';
 import NftPage from './pages/NftPage';
 
 export default function App() {
@@ -44,7 +45,7 @@ export default function App() {
     /* Usar "nfts={nfts} artists={artists}" para passar os dados
     para o componente */
     return (
-      <div>
+      <>
         {/* <Header />
         <Main />
         <Marketplace nfts={nfts} artists={artists} />
@@ -52,7 +53,11 @@ export default function App() {
           <Footer /> 
         </section> */}
         < NftPage nfts={nfts}/>
+        {/* <Routes>
+            <Route path='/nft-page' element={<><Header />  <NftPage nfts={nfts} artists={artists} />  <Footer /></>} />
 
-      </div>
+        </Routes> */}
+
+      </>
   );
 }

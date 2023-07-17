@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { useParams } from 'react-router-dom';
 import TimerComponent from "../commons/TimerComponent";
 import firstImage from "../res/image-place-holder.png";
 import avatarImage from "../res/avatar-placeholder.png";
@@ -18,6 +19,17 @@ function NftPage(props) {
     window.location.href =
       "https://www.animaapp.com/?utm_source=figma-samples&utm_campaign=figma-nftmarket&utm_medium=figma-samples";
   };
+
+  const { slug } = useParams();
+  const URI = `https://nftdatabase-703d2-default-rtdb.firebaseio.com/data/nfts.json?orderBy="id"&equalTo=${slug}`;
+  const [payload, setPayload] = useState({});
+
+  useEffect(() => {
+      fetch(URI)
+         .then(res => res.json())
+         .then(data => setPayload(data[slug - 1]))
+         .catch(err => console.log(err.message));
+   }, [payload, slug]);
 
   const [nftGalleryContent, setNftGalleryContent] = useState([]);
 
