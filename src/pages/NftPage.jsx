@@ -28,7 +28,7 @@ function NftPage(props) {
          .then(res => res.json())
          .then(data => setPayload(data[slug - 1]))
          .catch(err => console.log(err.message));
-   }, [payload, slug]);
+   }, [payload, slug, URI]);
 
   // Busca trabalhos correlatos do artista para exibir em "More from the artist"
   const moreFromTheArtist = props.nfts.filter(nft => nft.artist === payload.artist);
