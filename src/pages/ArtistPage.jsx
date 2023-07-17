@@ -39,10 +39,9 @@ export default function ArtistPage(props) {
    
      // Determina o que será mostrado na galeria, se as NFTs ou as Collections
      let nftGalleryContent;
+     const artistRelatedWork = props.nfts.filter(nft => nft.artist === payload.name); // Busca os outros trabalhos do artista
      if(barFocus === 0){
-        // Busca trabalhos correlatos do artista para exibir em "Created"
-        const created = props.nfts.filter(nft => nft.artist === payload.name);
-        nftGalleryContent = created.map(nftCard =>
+        nftGalleryContent = artistRelatedWork.map(nftCard =>
             <NftCard key={nftCard.id}
                         title={nftCard.name} 
                         image={nftCard.image} 
@@ -92,19 +91,19 @@ export default function ArtistPage(props) {
             <div>
                 <h3> PARTE DE CIMA AQUI</h3>
             </div>
-            <section className='search_nft_selector'>
-                <button onClick={handleClick} id='Nfts_bar' className='titles' style={nftBarStyle}>
-                    Nfts<span>{props.nfts.length}</span>
+            <section className='artists_pg_search_nft_selector'>
+                <button onClick={handleClick} id='Nfts_bar' className='artists_pg_titles' style={nftBarStyle}>
+                    Nfts<span>{artistRelatedWork.length}</span>
                 </button>
-                <button id='Owned_bar' className='titles' style={borderStyles.noBorder}>
+                <button id='Owned_bar' className='artists_pg_titles' style={borderStyles.noBorder}>
                     Owned<span>1</span>
                 </button>
-                <button onClick={handleClick} id='collections_bar' className='titles' style={collectionBarStyle}>
+                <button onClick={handleClick} id='collections_bar' className='artists_pg_titles' style={collectionBarStyle}>
                     Collections<span>{collectionsDummyData.length}</span>
                 </button>
             </section>
-            <section className='nft_gallery'>
-                <div className='nft_gallery_container'>
+            <section className='artists_pg_nft_gallery'>
+                <div className='artists_pg_nft_gallery_container'>
                     {nftGalleryContent}
                 </div>
             </section>

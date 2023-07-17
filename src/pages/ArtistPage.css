@@ -12,18 +12,18 @@
     background: var(--bg);
 }
 
-.search_nft_selector{
+.artists_pg_search_nft_selector{
     background: var(--bg);
     border-top: 1px solid var(--bg-secondary);
     display: flex;
     justify-content: center;
 }
 
-.titles {
+.artists_pg_titles {
 	display: flex;
 	align-items: center;
 	gap: 20px;
-	padding: 20px 10%;
+	padding: 20px 5%;
     background: none;
     color: white;
     font: 600 22px/140% 'Work Sans';
@@ -39,13 +39,13 @@ button > span{
     background: #858584;
 }
 
-.nft_gallery{
+.artists_pg_nft_gallery{
     background: var(--bg-secondary);
     padding: 70px 0;
     border-bottom: 2px solid #2B2B2B;
 }
 
-.nft_gallery_container{
+.artists_pg_nft_gallery_container{
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -68,7 +68,7 @@ button > span{
         display:none;
     }
 
-    .titles{
+    .artists_pg_titles{
         padding: 20px 5%;
         font: 600 16px/140% 'Work Sans';
         text-transform: capitalize;
