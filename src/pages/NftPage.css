@@ -2,32 +2,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap");
 
 .wholepage {
-  font-family: Work Sans;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "divImage divImage"
+	background-color: #2b2b2b;
+	color: var(--text, #fff);
+	font-family: Work Sans;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+  "divImage divImage"
     "divTexts divTimer"
-    "divTexts divTimer";
+    "divTexts divTimer"
+    "divCards divCards";
 }
+
 
 .divImage {
   grid-area: divImage;
-  width: 100vw; /* Largura da viewport */
+  width: 100vw;
 }
 
 .divImage img {
-  width: 100%; /* Largura de 100% da div */
-  height: 100%; /* Manter a proporção da imagem */
+	width: 100%;
+	height: 560px;
+	object-fit: cover;
 }
 
 .divTexts {
-  grid-area: divTexts;
-  text-align: left;
-  padding-left: 100px;
+	grid-area: divTexts;
+	text-align: left;
+	padding-left: 500px;
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+}
+
+.divTitle > h1 {
+  font-size: 51px;
 }
 
 .divTexts > .divTitle > p > span {
@@ -37,6 +49,8 @@
 
 .divTimer {
   grid-area: divTimer;
+  padding-left: 200px;
+  padding-top: 50px;
 }
 
 .divCreated {
@@ -45,6 +59,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.divCards {
+  grid-area: divCards;
 }
 
 .createdBy {
@@ -65,9 +83,10 @@
 }
 
 .profile > .avatarImage {
-  width: 30px; /* Defina o tamanho desejado para a imagem */
-  height: 30px; /* Defina o tamanho desejado para a imagem */
-  margin-right: 10px; /* Ajuste o valor conforme necessário */
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	border-radius: 15px;
 }
 
 .divDescription {
@@ -83,7 +102,6 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 10px;
   font-family: Space Mono;
 }
 
@@ -97,6 +115,11 @@
   align-items: center;
   cursor: pointer;
   font-size: 20px;
+}
+
+.divDetailsText2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .globeImage {
@@ -126,4 +149,70 @@
 
 .divTagsText h3:hover {
   transform: scale(0.9);
+}
+
+.divCards {
+	display: flex;
+	align-items: center;
+	padding: 0px 400px;
+	background: var(--background, #2b2b2b);
+	flex-direction: column;
+	gap: 60px;
+	align-self: stretch;
+	margin-top: -80px;
+}
+
+.divContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px; /* Ajuste o valor conforme necessário */
+}
+
+.divContent > h3 {
+  font-size: 38px;
+  margin-right: 200px;
+}
+
+.divButton {
+  margin-left: 30px; /* Ajuste o valor conforme necessário */
+}
+
+.buttonArtist {
+  border: 2px solid var(--call-to-action, #a259ff);
+  border-radius: 20px;
+  background-color: transparent;
+  color: #fff;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-align: center;
+  display: flex;
+  height: 60px;
+  padding: 0px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.buttonArtist {
+  transition: transform 0.4s ease;
+}
+
+.buttonArtist:hover {
+  transform: scale(0.95);
+}
+
+.divNfts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 31px;
+	padding-bottom: 50px;
+}
+
+.Nft_Card {
+  width: 50%;
 }

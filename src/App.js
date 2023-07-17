@@ -8,7 +8,8 @@ import Main from './main-page/Main';
 import Marketplace from './pages/Marketplace';
 import ConnectWallet from './pages/ConnectWallet';
 import CreateAccount from './pages/CreateAccount';
-// import NftPage from './pages/NftPage';
+import PaginaDinamicaTeste from './pages/PaginaDinamicaTeste';
+import NftPage from './pages/NftPage';
 
 export default function App() {
 
@@ -43,7 +44,7 @@ export default function App() {
           <Route path='/marketplace' element={<><Header />  <Marketplace nfts={nfts} artists={artists}/>  <Footer /></>} />
           <Route path='/create-account' element={<><Header />  <CreateAccount />  <Footer /></>} />
           <Route path='/connect-wallet' element={<><Header />  <ConnectWallet />  <Footer /></>} />
-          {/* <Route path='/nft-page' element={<><Header />  <NftPage nfts={nfts} artists={artists} />  <Footer /></>} /> */}
+          <Route path='/nft-page/:slug' element={<><Header />  <NftPage nfts={nfts} />  <Footer /></>} />
         </Routes>
       </>
   );

@@ -52,7 +52,7 @@ function TimerComponent(props) {
             <span>Seconds</span>
           </div>
         </div>
-        <button>{textButton}</button>
+        <button className="buttonBid">{textButton}</button>
       </div>
     </div>
   );

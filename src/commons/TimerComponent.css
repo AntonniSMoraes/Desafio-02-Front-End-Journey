@@ -12,15 +12,16 @@
   align-self: stretch;
   border-radius: 20px;
   width: 350px;
+  color: #fff;
 }
 
-button {
+.buttonBid {
   background-color: #a259ff;
   border-radius: 20px;
   outline: none;
   color: white;
   border: none;
-  padding: 30px;
+  padding: 20px 30px;
   width: 250px;
   font-size: 20px;
 }
@@ -36,7 +37,7 @@ button {
   font-family: Space Mono;
 }
 
-.timer > button {
+.timer > .buttonBid {
   font-size: 16px;
   font-family: Work Sans;
 }
@@ -50,11 +51,11 @@ button {
   text-align: center;
 }
 
-.timer button {
+.timer .buttonBid {
   transition: transform 0.4s ease;
 }
 
-.timer button:hover {
+.timer .buttonBid:hover {
   transform: scale(0.95);
 }
 
@@ -78,6 +79,6 @@ button {
   margin-top: 5px;
 }
 
-button {
+.buttonBid {
   margin-top: 10px;
 }
