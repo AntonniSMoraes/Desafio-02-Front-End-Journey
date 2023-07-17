@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans&display=swap');
+
+.ranking_card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+    background: var(--background-secondary, #3B3B3B);
+    height: auto;
+    padding: 12px 20px;
+    gap: 20px;  
+}
+
+.ranking_cardp2 > div > p{
+    background: transparent;
+}
+
+.ranking_card > .ranking_cardp1{
+    display: flex;
+    flex-grow: 1;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 430px;
+}
+
+.ranking_number{
+    color: var(--caption-label-text, #858584);
+    text-align: center;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    flex-shrink: 0;
+    border-radius: 20px;    
+    background: var(--background, #2B2B2B);
+    display: flex;
+    width: 30px;
+    height: 28px;
+    align-items: center;    
+    justify-content: center;
+    gap: 10px;
+}
+
+.ranking_card > .ranking_cardp1 > div{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding-left: 4%;
+    transition: all 0.3s ease;
+    gap: 20px;
+}
+
+.ranking_card > .ranking_cardp1 > div:hover{
+    transform: scale(0.95, 0.95);
+    transform-origin: center; 
+}
+
+.ranking_avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    gap: 10px;
+}
+
+.ranking_artist{
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; 
+    text-transform: capitalize;
+    margin: 0;
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    flex: 1 0 0;
+}
+
+
+/* PART 2*/
+
+.ranking_card > .ranking_cardp2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.ranking_cardp2 > p{
+    display: flex;
+    width: 160px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+#stats_change{
+    color: var(--green, #00AC4F);
+}
+
+#stats_nfts{
+    color: var(--text, #FFF);
+}
+
+.stats_volume{
+    color: var(--text, #FFF);
+}
+
+@media (max-width: 1279px){
+    .ranking_card{
+        display: flex;
+        padding: 0px 15px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: 60px;
+    }
+    .ranking_card > .ranking_cardp1 > div{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        padding-left: 4%;
+        transition: all 0.3s ease;
+        gap: 12px;
+    }
+    .ranking_number{
+        left: 6px;
+        color: var(--caption-label-text, #858584);
+        text-align: center;
+        font-family: Space Mono;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        background: none;
+    }
+    .ranking_avatar{
+        display: flex;
+        width: 24px;
+        height: 24px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .ranking_artist{
+        color: #FFF;
+        font-family: Work Sans;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; 
+        text-transform: capitalize;
+        flex: 1 0 0;
+        flex-shrink: 1;
+    }
+    .ranking_cardp1{
+        display: flex;
+        width: 240px;
+        align-items: center;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        gap: 0px;
+    }
+
+    .ranking_cardp2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .ranking_cardp2 > p{
+        display: flex;
+        width: 100px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    #stats_nfts{
+        display: none;
+    }
+}
+
+@media (max-width: 833px){
+    #stats_nfts{
+        display: none;
+    }
+    #stats_change{
+        display: none;
+    }
+
+
+    .ranking_card{
+        display: flex;
+        padding: 0;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        height: 60px;
+        padding: 0px 10px;
+        
+    }
+    .ranking_card > .ranking_cardp1 > div{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        padding-left: 4%;
+        transition: all 0.3s ease;
+        gap: 12px;
+    }
+    .ranking_number{
+        color: var(--caption-label-text, #858584);
+        text-align: center;
+        font-family: Space Mono;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        background: none;
+        /*width: auto;*/
+
+    }
+    .ranking_avatar{
+        display: flex;
+        width: 24px;
+        height: 24px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        display: flex;
+        align-items: flex-start;
+    }
+    .ranking_artist{
+        color: #FFF;
+        font-family: Work Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; 
+        display: flex;
+        flex: row;
+        font-family: Work Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        width: 131px;
+
+    }
+    .ranking_cardp1{
+        display: flex;
+        max-width: 167px;
+        align-items: center;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        gap: 0;
+    }
+
+    .ranking_cardp2{
+        display: flex;
+        max-width: 80px;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .ranking_cardp2 > p{
+        display: flex;
+        width: 80px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .ranking_cardp2 > p{
+        font-size: 12px;
+    }
+}

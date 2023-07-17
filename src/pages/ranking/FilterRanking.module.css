@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap');
+
+.titles {
+	display: flex;
+    flex-flow: row nowrap;
+	align-items: center;
+	gap: 20px;
+    justify-content: center;
+    width: 25%;
+    background: none;
+    font: 600 22px/140% 'Work Sans';
+    text-transform: capitalize;
+    text-align: center;
+    border: none;
+    height: 60px;
+
+}
+.titles > p{
+    display: none;
+}
+.search_nft_selector{
+    background: var(--bg);  
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1279px){
+    .titles{
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 22.4px */
+        text-transform: capitalize;
+    }
+}
