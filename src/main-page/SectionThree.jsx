@@ -4,7 +4,7 @@ import React from "react";
 
 export default function SectionThree({ nfts }) {
   const artistCards = nfts.map((nft) => (
-    <a href="/artist-page" className="remove-style">
+    <a href={"/artists/"+nft.id} className="remove-style">
       <ArtistCard
       id={nft.id}
       photo={nft.artistPhoto}

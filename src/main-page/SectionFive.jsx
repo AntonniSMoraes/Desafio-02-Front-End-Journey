@@ -5,6 +5,7 @@ export default function SectionFive(props) {
   const nftGalleryContent = props.nfts.slice(0, 3).map((nftCard) => (
       <NftCard
         key={nftCard.id}
+        id={nftCard.id}
         title={nftCard.name}
         image={nftCard.image}
         artist={nftCard.artist}
