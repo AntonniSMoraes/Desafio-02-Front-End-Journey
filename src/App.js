@@ -8,8 +8,8 @@ import Main from './main-page/Main';
 import Marketplace from './pages/Marketplace';
 import ConnectWallet from './pages/ConnectWallet';
 import CreateAccount from './pages/CreateAccount';
-import Ranking from './pages/ranking/Ranking'
-// import NftPage from './pages/NftPage';
+import Ranking from './pages/ranking/Ranking';
+import NftPage from './pages/NftPage';
 
 export default function App() {
 
@@ -45,6 +45,7 @@ export default function App() {
           <Route path='/create-account' element={<><Header />  <CreateAccount />  <Footer /></>} />
           <Route path='/connect-wallet' element={<><Header />  <ConnectWallet />  <Footer /></>} />
           <Route path='/nft-page/:slug' element={<><Header />  <NftPage nfts={nfts} />  <Footer /></>} />
+          <Route path='/rankings/' element={<><Header />  <Ranking artists={artists} />  <Footer /></>} />
         </Routes>
       </>
   );
