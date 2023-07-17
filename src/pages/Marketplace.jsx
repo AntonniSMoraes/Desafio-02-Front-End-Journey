@@ -26,6 +26,7 @@ export default function Marketplace(props){
     if(barFocus === 0){
         nftGalleryContent = props.nfts.map(nftCard =>
             <NftCard key={nftCard.id}
+                id={nftCard.id}
                 title={nftCard.name} 
                 image={nftCard.image} 
                 artist={nftCard.artist}
@@ -37,6 +38,7 @@ export default function Marketplace(props){
     else{
         nftGalleryContent = collectionsDummyData.map(collection => (
             <Card key={collection.id}
+                id={collection.id}
                 nomeArtista={collection.nomeArtista}
                 imagemPrincipal={collection.imagemPrincipal}
                 imagemPqna1={collection.imagemPqna1}
