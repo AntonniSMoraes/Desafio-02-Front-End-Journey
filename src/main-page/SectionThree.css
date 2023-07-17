@@ -173,10 +173,10 @@
     transform: scale(0.9, 1);
     transform-origin: center;
   }
-  .artist-buttons .remove-style:nth-child(n-13) {
+  .artist-buttons .remove-style:nth-child(n-11) {
     display: flex;
   }
-  .artist-buttons .remove-style:nth-child(n+13) {
+  .artist-buttons .remove-style:nth-child(n+11) {
     display: none;
   }
 }
