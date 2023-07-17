@@ -4,32 +4,6 @@ import HeaderRanking from './HeaderRanking'
 import FilterRanking from './FilterRanking';
 
 export default function Ranking(props) {
-/*
-    const collectionData = [
-        {
-            id: '1',
-            artist: 'Jaydon Ekstrom Bothman',
-            avatar: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-5@2x.png',
-            change: '1.41',
-            nfts: '602',
-            volume: '12.4'
-        },{
-            id: '2',
-            artist: 'Talan Korsgaard',
-            avatar: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-5@2x.png',
-            change: '1.41',
-            nfts: '602',
-            volume: '12.4'
-        },{
-            id: '3',
-            artist: 'Jaydon Ekstrom Bothman',
-            avatar: 'https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-5@2x.png',
-            change: '1.41',
-            nfts: '602',
-            volume: '12.4'
-        }
-    ]
-*/
     return(
         <div className={styles.ranking_page}>
             <div id={styles.browser_ranking}>

@@ -5,7 +5,7 @@ export default function CardRanking(props) {
     const navigate = useNavigate();
 
     const handleArtistPage = () => {
-        navigate('/artist-page');
+        navigate('/artists/'+props.number);
     }
 
     return(
