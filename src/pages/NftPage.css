@@ -5,7 +5,7 @@
   background-color: #2b2b2b;
   color: var(--text, #fff);
   font-family: Work Sans;
-  display: grid;
+  /*display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
@@ -14,7 +14,7 @@
     "divImage divImage"
     "divTexts divTimer"
     "divTexts divTimer"
-    "divCards divCards";
+    "divCards divCards";*/
 }
 
 .divImage {
@@ -36,7 +36,7 @@
   flex-direction: column;
   gap: 22px;
   max-width: 600px;
-  margin: 0 auto;
+  
 }
 
 .divTitle > h1 {
@@ -53,7 +53,7 @@
   /* padding-left: 200px; */
   padding-top: 50px;
   max-width: 600px;
-  margin: 0 auto;
+  
 }
 
 .divCreated {
@@ -154,6 +154,18 @@
   transform: scale(0.9);
 }
 
+.nft_page_middle_part {
+	display: flex;
+	align-content: center;
+	margin: 0 auto;
+	width: 1050px;
+	margin-bottom: 100px;
+}
+
+.nft_page_middle_part > *{
+  flex: 0 0 auto;
+}
+
 .divCards {
   display: flex;
   align-items: center;
@@ -166,10 +178,12 @@
 }
 
 .divContent {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 10px; /* Ajuste o valor conforme necessário */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: 10px;
+	width: 1050px;
+	justify-content: space-between;
 }
 
 .divContent > h3 {

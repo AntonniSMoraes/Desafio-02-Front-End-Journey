@@ -52,72 +52,84 @@ function NftPage(props) {
       <div className="divImage">
         <img src={payload.image} alt="NFT" />
       </div>
-      <div className="divTexts">
-        <div className="divTitle">
-          <h1>{payload.name}</h1>
-          <p>
-            <span>Minted On {stringDate}</span>
-          </p>
-        </div>
+      <div class='nft_page_middle_part'>
+        <div className="divTexts">
+          <div className="divTitle">
+            <h1>{payload.name}</h1>
+            <p>
+              <span>Minted On {stringDate}</span>
+            </p>
+          </div>
 
-        <div className="divCreated">
-          <div className="createdBy">
-            <h3>Created By</h3>
+          <div className="divCreated">
+            <div className="createdBy">
+              <h3>Created By</h3>
+            </div>
+            <div className="profile" onClick={handleDivClick}>
+              <img className="avatarImage" src={payload.artistPhoto} alt="Avatar" />
+              <h3>{payload.artist}</h3>
+            </div>
           </div>
-          <div className="profile" onClick={handleDivClick}>
-            <img className="avatarImage" src={payload.artistPhoto} alt="Avatar" />
-            <h3>{payload.artist}</h3>
-          </div>
-        </div>
 
-        <div className="divDescription">
-          <h3>Description</h3>
-          <p>
-            {`[${payload.description}]: `}
-            The Orbitians is a collection of 10,000 unique NFTs on the Ethereum
-            blockchain,
-            <br />
-            <br />
-            There are all sorts of beings in the NFT Universe. The most advanced
-            and friendly of the bunch are Orbitians.
-            <br />
-            <br />
-            They live in a metal space machines, high up in the sky and only
-            have one foot on Earth.
-            <br /> These Orbitians are a peaceful race, but they have been at
-            war with a group of invaders for many generations. <br />
-            The invaders are called Upside-Downs, because of their inverted
-            bodies that live on the ground, yet do not know any other way to be.
-            Upside-Downs believe that they will be able to win this war if they
-            could only get an eye into Orbitian territory, so they've taken to
-            make human beings their target.
-          </p>
+          <div className="divDescription">
+            <h3>Description</h3>
+            <p>
+              {`[${payload.description}]: `}
+              The Orbitians is a collection of 10,000 unique NFTs on the Ethereum
+              blockchain,
+              <br />
+              <br />
+              There are all sorts of beings in the NFT Universe. The most advanced
+              and friendly of the bunch are Orbitians.
+              <br />
+              <br />
+              They live in a metal space machines, high up in the sky and only
+              have one foot on Earth.
+              <br /> These Orbitians are a peaceful race, but they have been at
+              war with a group of invaders for many generations. <br />
+              The invaders are called Upside-Downs, because of their inverted
+              bodies that live on the ground, yet do not know any other way to be.
+              Upside-Downs believe that they will be able to win this war if they
+              could only get an eye into Orbitian territory, so they've taken to
+              make human beings their target.
+            </p>
+          </div>
+          <div className="divDetails">
+            <div className="divTitleDetails">
+              <h3>Details</h3>
+            </div>
+            <div className="divDetailsText1" onClick={handleDivCLick2}>
+              <img className="globeImage" src={globeImage} alt="Globe" />
+              <h3>View on Etherscan</h3>
+            </div>
+            <div className="divDetailsText2" onClick={handleDivCLick2}>
+              <img className="globeImage" src={globeImage} alt="Globe" />
+              <h3>View Original</h3>
+            </div>
+          </div>
+          <div className="divTags">
+            <div className="divTitleTags">
+              <h3>Tags</h3>
+            </div>
+            <div className="divTagsText">
+              <h3>Animation</h3>
+              <h3>Illustration</h3>
+              <h3>Moon</h3>
+              <h3>Moon</h3>
+            </div>
+          </div>
         </div>
-        <div className="divDetails">
-          <div className="divTitleDetails">
-            <h3>Details</h3>
-          </div>
-          <div className="divDetailsText1" onClick={handleDivCLick2}>
-            <img className="globeImage" src={globeImage} alt="Globe" />
-            <h3>View on Etherscan</h3>
-          </div>
-          <div className="divDetailsText2" onClick={handleDivCLick2}>
-            <img className="globeImage" src={globeImage} alt="Globe" />
-            <h3>View Original</h3>
-          </div>
-        </div>
-        <div className="divTags">
-          <div className="divTitleTags">
-            <h3>Tags</h3>
-          </div>
-          <div className="divTagsText">
-            <h3>Animation</h3>
-            <h3>Illustration</h3>
-            <h3>Moon</h3>
-            <h3>Moon</h3>
-          </div>
+        <div className="divTimer">
+          <TimerComponent
+            auctionEndsIn="59 : 59 : 59"
+            firstText="Auction Ends In:"
+            textButton="Place a Bid"
+          />
         </div>
       </div>
+
+     
+
       <div className="divCards">
         <div className="divArtistText"></div>
         <div className="divContent">
@@ -131,14 +143,6 @@ function NftPage(props) {
           </div>
         </div>
         <div className="divNfts">{nftGalleryContent}</div>
-      </div>
-
-      <div className="divTimer">
-        <TimerComponent
-          auctionEndsIn="59 : 59 : 59"
-          firstText="Auction Ends In:"
-          textButton="Place a Bid"
-        />
       </div>
     </div>
   );
